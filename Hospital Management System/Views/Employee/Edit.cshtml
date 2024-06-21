@@ -1,0 +1,55 @@
+﻿@using HospitalManagementSystem.Application.Models;
+@model EmployeeDTO
+
+<form method="post" asp-action="Edit">
+    <div style="max-width: 400px; margin: 0 auto;">
+        <fieldset>
+            <legend>Edit Employee</legend>
+            <div class="form-group">
+                <label for="firstName">First Name:</label>
+                <input type="text" class="form-control" id="firstName" name="firstName" value="@Model.FirstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name:</label>
+                <input type="text" class="form-control" id="lastName" name="lastName" value="@Model.LastName" required>
+            </div>
+            <div class="form-group">
+                <label for="birthDate">Birthdate:</label>
+                <input type="date" class="form-control" id="birthDate" name="birthDate" value="@Model.Birthdate.Date.ToString("yyyy-MM-dd")" required>
+            </div>
+            <div class="form-group">
+                <label for="pesel">Pesel:</label>
+                <input type="text" class="form-control" id="pesel" name="pesel" value="@Model.Pesel" required>
+            </div>
+            <div class="form-group">
+                <label for="sex">Sex:</label>
+                <select class="form-control" id="sex" name="sex" required>
+                    <option value="@false">Male</option>
+                    <option value="@true">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Firedate">Fire Date:</label>
+                <input type="date" class="form-control" id="Firedate" name="Firedate" value="@Model.FireDate.Date.ToString("yyyy-MM-dd")" required>
+            </div>
+            <div class="form-group">
+                <label for="VacationDays">Vacation Days:</label>
+                <input type="number" class="form-control" id="VacationDays" name="VacationDays" value="@Model.VacationDays" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="salary">Salary:</label>
+                <input type="number" class="form-control" id="salary" name="salary" value="@Model.Salary" required min="1">
+            </div>
+            <div class="form-group">
+                <label for="role">Role:</label>
+                <select class="form-control" id="empKind" name="empKind" required>
+                    <option value="Trainee">Trainee</option>
+                    <option value="Receptionist">Receptionist</option>
+                    <option value="Doctor">Doctor</option>
+                    <option value="Admin">Admin</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Update</button>
+        </fieldset>
+    </div>
+</form>

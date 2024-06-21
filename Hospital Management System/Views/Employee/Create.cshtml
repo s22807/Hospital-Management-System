@@ -1,0 +1,51 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using HospitalManagementSystem.Application.Models;
+@model EmployeeCreateDTO
+<div class="container mt-4">
+    <h2>Create Employee</h2>
+    <hr>
+    <form method="post" asp-controller="Employee" asp-action="Create">
+        <input type="hidden" id="DepartmentId" name="DepartmentId" value="@Model.DepartmentId"></input>
+        <div class="form-group">
+            <label for="firstName">First Name:</label>
+            <input type="text" class="form-control" id="firstName" name="firstName" required />
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" required />
+        </div>
+        <div class="form-group">
+            <label for="pesel">PESEL (11 digits):</label>
+            <input type="text" class="form-control" id="pesel" name="pesel" pattern="[0-9]{11}" required/>
+        </div>
+        <div class="form-group">
+            <label for="birthDate">Birth Date:</label>
+            <input type="date" class="form-control" id="birthDate" name="birthDate" required />
+        </div>
+        <div class="form-group">
+            <label for="sex">Sex:</label>
+            <select class="form-control" id="sex" name="sex" required>
+                <option value="@false">Male</option>
+                <option value="@true">Female</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="role">Role:</label>
+            <select class="form-control" id="empKind" name="empKind" required>
+                <option value="Trainee">Trainee</option>
+                <option value="Receptionist">Receptionist</option>
+                <option value="Doctor">Doctor</option>
+                <option value="Admin">Admin</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="salary">Salary:</label>
+            <input type="number" class="form-control" id="salary" name="salary" required />
+        </div>
+        <button type="submit" value="Create" class="btn btn-primary">Create Employee</button>
+    </form>
+</div>

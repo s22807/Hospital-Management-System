@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using HospitalManagementSystem.Application.Models;
+@model DepartmentDetailsDTO
+
+<div class="container mt-4">
+    <h2>Department Details</h2>
+    <hr>
+    <div class="row">
+        <div class="col-md-6">
+            <h4>ID: @Model.Id</h4>
+            <h4>Name: @Model.Name</h4>
+
+            <h4>Employees:</h4>
+            <ul class="list-group">
+                @foreach (var employee in Model.Employees)
+                {
+                    <li class="list-group-item">
+                        <strong>ID:</strong> @employee.Id, 
+                        <br />
+                        <strong>Name:</strong> @(employee.FirstName + " " + employee.LastName), 
+                        <strong>Role:</strong> @employee.EmpKind,
+                        <></>
+                        <form method="post" asp-controller="Employee" asp-action="Remove">
+                            <input type="hidden" name="employeeId" value="@employee.Id" />
+                            <input type="hidden" name="departmentId" value="@Model.Id" />
+                            <button type="submit" class="btn btn-danger btn-sm float-right">Remove</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+
+            <a href="@Url.Action("Create", "Employee", new { departmentId = Model.Id})" class="btn btn-primary mt-3">Add Employee</a>
+        </div>
+
+        <div class="col-md-6">
+            <h4>Rooms:</h4>
+            <ul class="list-group">
+                @foreach (var room in Model.Rooms)
+                {
+                    <li class="list-group-item">
+                        <form method="post" asp-action="RemoveRoom">
+                            <input type="hidden" name="roomId" value="@room.Id" />
+                            <input type="hidden" name="departmentId" value="@Model.Id" />
+                            <strong>ID:</strong> @room.Id,
+                            <strong>Room Number:</strong> @room.Number
+                            <button type="submit" class="btn btn-danger btn-sm float-right">Remove</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+
+            <h4>Add Room:</h4>
+            <form method="post" asp-action="AddRoom">
+                <div class="form-group">
+                    <label for="roomNumber">Room Number:</label>
+                    <input type="number" class="form-control" id="roomNumber" name="roomNumber" min="1"/>
+                    <input type="hidden" name="departmentId" value="@Model.Id" />
+                </div>
+                <button type="submit" class="btn btn-success">Add Room</button>
+            </form>
+        </div>
+    </div>
+</div>

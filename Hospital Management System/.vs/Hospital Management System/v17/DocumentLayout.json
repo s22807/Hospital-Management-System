@@ -1,0 +1,146 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.domain\\models\\people\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.application\\models\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 180,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBgAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:50:12.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:50:12.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Details.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Details.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:50:12.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:50:12.737Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Index.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Index.cshtml",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAiwCEAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:50:12.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:50:12.742Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA0AAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:50:12.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:50:12.713Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+﻿<Properties StartupConfiguration="{099A2E43-A81B-497C-8D39-F22F075C20C6}|https">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Hospital_220Management_220System PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="../HospitalManagementSystem.Infrastructure/Extensions.cs">
+    <Files>
+      <File FileName="../HospitalManagementSystem.Infrastructure/Data/ApplicationDbContext.cs" Line="15" Column="10" />
+      <File FileName="../HospitalManagementSystem.Domain/Models/Dept/Room.cs" Line="6" Column="22" />
+      <File FileName="../HospitalManagementSystem.Domain/Models/Dept/VisitConfiguration.cs" Line="14" Column="16" />
+      <File FileName="../HospitalManagementSystem.Application/Models/CreateVisitDTO.cs" Line="3" Column="3" />
+      <File FileName="../HospitalManagementSystem.Application/Models/VisitDTO.cs" Line="1" Column="1" />
+      <File FileName="../HospitalManagementSystem.Application/Services/DepartmentService.cs" Line="9" Column="40" />
+      <File FileName="../HospitalManagementSystem.Application/Services/EmployeeService.cs" Line="25" Column="41" />
+      <File FileName="Controllers/EmployeeController.cs" Line="30" Column="42" />
+      <File FileName="../HospitalManagementSystem.Domain/Models/Dept/Department.cs" Line="1" Column="1" />
+      <File FileName="../HospitalManagementSystem.Domain/Models/Dept/Visit.cs" Line="25" Column="65" />
+      <File FileName="../HospitalManagementSystem.Domain/Models/Payments/Bill.cs" Line="18" Column="10" />
+      <File FileName="../HospitalManagementSystem.Application/Services/PatientService.cs" Line="1" Column="1" />
+      <File FileName="../HospitalManagementSystem.Application/Services/VisitService.cs" Line="26" Column="60" />
+      <File FileName="Controllers/VisitController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/PatientController.cs" Line="1" Column="1" />
+      <File FileName="Controllers/HomeController.cs" Line="1" Column="1" />
+      <File FileName="../HospitalManagementSystem.Infrastructure/Extensions.cs" Line="9" Column="50" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Hospital Management System">
+            <Node name="Hospital Management System">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Properties" expanded="True" />
+            </Node>
+            <Node name="HospitalManagementSystem.Infrastructure" expanded="True">
+              <Node name="Extensions.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

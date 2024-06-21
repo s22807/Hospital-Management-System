@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using HospitalManagementSystem.Application.Models;
+@model PatientDetailsDTO
+
+<div>
+    <h2>Patient Details</h2>
+    <dl class="row">
+        <dt class="col-sm-3">First Name:</dt>
+        <dd class="col-sm-9">@Model.FirstName</dd>
+
+        <dt class="col-sm-3">Last Name:</dt>
+        <dd class="col-sm-9">@Model.LastName</dd>
+
+        <dt class="col-sm-3">Pesel:</dt>
+        <dd class="col-sm-9">@Model.Pesel</dd>
+
+        <dt class="col-sm-3">Birthdate:</dt>
+        <dd class="col-sm-9">@Model.Birthdate.ToShortDateString()</dd>
+
+        <dt class="col-sm-3">Sex:</dt>
+        <dd class="col-sm-9">@Model.Sex</dd>
+
+        <dt class="col-sm-3">Created At:</dt>
+        <dd class="col-sm-9">@Model.CreatedAt</dd>
+    </dl>
+</div>

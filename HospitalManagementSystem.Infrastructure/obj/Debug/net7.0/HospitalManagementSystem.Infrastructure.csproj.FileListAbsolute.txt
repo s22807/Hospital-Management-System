@@ -1,0 +1,84 @@
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.deps.json
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.runtimeconfig.json
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.pdb
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Application.dll
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Domain.dll
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Application.pdb
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Domain.pdb
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfo.cs
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.CopyComplete
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/refint/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.pdb
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.genruntimeconfig.cache
+/Users/hubertniewinski/Desktop/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/ref/HospitalManagementSystem.Infrastructure.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.deps.json
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.runtimeconfig.json
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Infrastructure.pdb
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Application.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Domain.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Application.pdb
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/bin/Debug/net7.0/HospitalManagementSystem.Domain.pdb
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfo.cs
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.CopyComplete
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/refint/HospitalManagementSystem.Infrastructure.dll
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.pdb
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.genruntimeconfig.cache
+C:/Users/SzymonGajda/source/MAS/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/ref/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.AssemblyInfo.cs
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/refint/HospitalManagementSystem.Infrastructure.dll
+/Users/hubertniewinski/Desktop/untitled folder/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0/HospitalManagementSystem.Infrastructure.pdb
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.deps.json
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.runtimeconfig.json
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.pdb
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Application.dll
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Domain.dll
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Application.pdb
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Domain.pdb
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.csproj.CopyComplete
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\refint\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.pdb
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\SzymonGajda\source\MAS\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\ref\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.deps.json
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.runtimeconfig.json
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Infrastructure.pdb
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Application.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Domain.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Application.pdb
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\bin\Debug\net7.0\HospitalManagementSystem.Domain.pdb
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.AssemblyInfo.cs
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\Hospital.53A94FB9.Up2Date
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\refint\HospitalManagementSystem.Infrastructure.dll
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.pdb
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\HospitalManagementSystem.Infrastructure.genruntimeconfig.cache
+C:\Users\SzymonGajda\OneDrive\hospital2\HospitalManagementSystem.Infrastructure\obj\Debug\net7.0\ref\HospitalManagementSystem.Infrastructure.dll
