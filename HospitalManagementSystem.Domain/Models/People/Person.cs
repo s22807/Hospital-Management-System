@@ -8,12 +8,12 @@
 
         public DateTime BirthDate { get; protected set; }
 
-        public bool Sex { get; private set; }
+        public bool Sex { get; set; }
 
         public Person(string firstName, string lastName, string pesel, DateTime birthDate, bool sex)
         {
             SetFirstname(firstName);
-            SetLastName(lastName);
+            SetLastname(lastName);
             Pesel = pesel;
             SetBirthDate(birthDate);
             Sex = sex;
@@ -21,12 +21,12 @@
         public Person(string firstName, string lastName, string pesel, bool sex)
         {
             SetFirstname(firstName);
-            SetLastName(lastName);
+            SetLastname(lastName);
             Pesel = pesel;
             Sex = sex;
         }
 
-        private void SetFirstname(string value)
+        public void SetFirstname(string value)
         {
             if (!string.IsNullOrEmpty(value) && value.Trim().Length > 0)
             {
@@ -38,7 +38,7 @@
             }
         }
 
-        private void SetLastName(string value)
+        public void SetLastname(string value)
         {
             if (!string.IsNullOrEmpty(value) && value.Trim().Length > 0)
             {
@@ -49,8 +49,19 @@
                 throw new ArgumentException("Lastname cannot be empty or null");
             }
         }
+        public void SetPesel(string value)
+        {
+            if (value.Length != 11)
+            {
+                throw new ArgumentException("Pesel must be 11 characters long");
+            }
+            else
+            {
+                Pesel = value;
+            }
+        }
 
-        private void SetBirthDate(DateTime value)
+        public virtual void SetBirthDate(DateTime value)
         {
             if (value > new DateTime(1900, 1, 1, 0, 0, 0))
             {

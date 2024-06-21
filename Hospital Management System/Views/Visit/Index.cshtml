@@ -3,5 +3,54 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index Visit</h1>
+@using HospitalManagementSystem.Application.Models;
+@model IEnumerable<VisitShortDTO>
+
+<div class="row">
+    <div class="col-md-6">
+        <h4>Visit Data</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Visit Start Date</th>
+                    <th>Visit End Date</th>
+                    <th>Doctor ID</th>
+                    <th>Room Number</th>
+                    <th>Department Name</th>
+                    <th>Patient ID</th>
+                    <th>Tag Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var visit in Model)
+                {
+                    <tr>
+                        <td>@visit.VisitStartDate</td>
+                        <td>@visit.VisitEndDate</td>
+                        <td>@visit.DoctorId</td>
+                        <td>@visit.RoomNumber</td>
+                        <td>@visit.DepartmentName</td>
+                        <td>@visit.PatientId</td>
+                        <td>@visit.TagName</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="col-md-6">
+        <h4>Tags</h4>
+        <ul>
+            @foreach (var tag in ViewBag.Tags)
+            {
+                <li>
+                    <form method="post" asp-action="Slots">
+                        <input type="hidden" name="tagDTO.Id" value="@tag.Id" />
+                        <input type="hidden" name="tagDTO.Name" value="@tag.Name" />
+                        <button type="submit">@tag.Name</button>
+                    </form>
+                </li>
+            }
+        </ul>
+    </div>
+</div>
 

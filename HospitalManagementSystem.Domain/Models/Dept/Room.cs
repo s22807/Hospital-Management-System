@@ -1,4 +1,5 @@
-﻿using HospitalManagementSystem.Domain.Models.People;
+﻿using HospitalManagementSystem.Domain.Models.Department;
+using HospitalManagementSystem.Domain.Models.People;
 
 namespace HospitalManagementSystem.Domain.Models.Department
 {
@@ -7,17 +8,24 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public Guid Id { get; }
         public int Number { get; set; }
         public Guid? DepartmentId { get; private set; }
+        public Guid? TagId { get; private set; }
         public virtual Department? Department { get; set; }
-        public virtual IEnumerable<Visit> Visits { get; set; } = Enumerable.Empty<Visit>();
-        public virtual IEnumerable<Key> Keys { get; set; } = new List<Key>();
+        public virtual ICollection<Visit> Visits { get; set; } 
+        public virtual ICollection<Key> Keys { get; set; } 
+        public virtual Tag? Tag { get; set; }
+
         private void SetRoomNumber(int number)
         {
             if (number < 0)
             {
                 throw new ArgumentException("Room number cannot be negative");
             }
-            
+
             Number = number;
+        }
+        public void SetTag(Tag tag)
+        {
+            Tag = tag;
         }
 
         public Room(int number, Department d)
@@ -61,7 +69,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
                 RoomId = roomId;
                 Id = Guid.NewGuid();
             }
-            
+
             public void RentKey(Employee employee)
             {
                 if (employee != null)

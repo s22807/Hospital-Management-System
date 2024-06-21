@@ -40,12 +40,12 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("7b22190a-a1d6-47db-bbb5-698e36a0760c"),
+                            Id = new Guid("ceec788e-98a4-45c1-86e2-a5d4c4b4f22a"),
                             Name = "Childcare"
                         },
                         new
                         {
-                            Id = new Guid("c7a69a1d-4180-4a08-8fe9-4fee344e9c46"),
+                            Id = new Guid("190da905-55ba-430a-aac1-7bdc15da43ac"),
                             Name = "Dentistry"
                         });
                 });
@@ -62,9 +62,14 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<int>("Number")
                         .HasColumnType("int");
 
+                    b.Property<Guid?>("TagId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
+
+                    b.HasIndex("TagId");
 
                     b.ToTable("Room", (string)null);
                 });
@@ -99,43 +104,61 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.ToTable("RoomKey", (string)null);
                 });
 
+            modelBuilder.Entity("HospitalManagementSystem.Domain.Models.Department.Tag", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Tag", (string)null);
+                });
+
             modelBuilder.Entity("HospitalManagementSystem.Domain.Models.Department.Visit", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid>("BillId")
+                    b.Property<Guid?>("BillId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<Guid?>("DoctorId")
+                    b.Property<Guid>("DoctorId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("PatientId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<Guid?>("RoomId")
+                    b.Property<Guid>("RoomId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime?>("UpdatedAt")
-                        .HasColumnType("datetime2");
+                    b.Property<Guid?>("TagId")
+                        .HasColumnType("uniqueidentifier");
 
-                    b.Property<DateTime>("VisitDate")
+                    b.Property<DateTime>("VisitStartDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("BillId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[BillId] IS NOT NULL");
 
                     b.HasIndex("DoctorId");
 
                     b.HasIndex("PatientId");
 
                     b.HasIndex("RoomId");
+
+                    b.HasIndex("TagId");
 
                     b.ToTable("Visit", (string)null);
                 });
@@ -199,11 +222,14 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DeletedAt")
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<Guid?>("DepartmentId")
                         .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("FireDate")
                         .HasColumnType("datetime2");
@@ -212,12 +238,18 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int?>("HoursWorked")
+                        .HasColumnType("int");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("LoggedAt")
+                    b.Property<DateTime?>("LoggedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pesel")
                         .IsRequired()
@@ -232,12 +264,23 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<bool>("Sex")
                         .HasColumnType("bit");
 
+                    b.Property<Guid?>("TagId")
+                        .HasColumnType("uniqueidentifier");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("VacationDays")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("VisitTime")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("DepartmentId");
+
+                    b.HasIndex("TagId");
 
                     b.ToTable("Employee", (string)null);
                 });
@@ -254,8 +297,11 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<DateTime>("DeletedAt")
+                    b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FathersName")
                         .HasColumnType("nvarchar(max)");
@@ -271,10 +317,13 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<DateTime>("LoggedAt")
+                    b.Property<DateTime?>("LoggedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("MothersName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Pesel")
@@ -283,6 +332,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
 
                     b.Property<bool>("Sex")
                         .HasColumnType("bit");
+
+                    b.Property<string>("Username")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -296,7 +348,14 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.SetNull);
 
+                    b.HasOne("HospitalManagementSystem.Domain.Models.Department.Tag", "Tag")
+                        .WithMany()
+                        .HasForeignKey("TagId")
+                        .OnDelete(DeleteBehavior.SetNull);
+
                     b.Navigation("Department");
+
+                    b.Navigation("Tag");
                 });
 
             modelBuilder.Entity("HospitalManagementSystem.Domain.Models.Department.Room+Key", b =>
@@ -321,13 +380,13 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasOne("HospitalManagementSystem.Domain.Models.Payments.Bill", "Bill")
                         .WithOne("Visit")
                         .HasForeignKey("HospitalManagementSystem.Domain.Models.Department.Visit", "BillId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("HospitalManagementSystem.Domain.Models.People.Employee", "Doctor")
                         .WithMany("Visits")
                         .HasForeignKey("DoctorId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .IsRequired();
 
                     b.HasOne("HospitalManagementSystem.Domain.Models.People.Patient", "Patient")
                         .WithMany("Visits")
@@ -338,6 +397,12 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasOne("HospitalManagementSystem.Domain.Models.Department.Room", "Room")
                         .WithMany("Visits")
                         .HasForeignKey("RoomId")
+                        .OnDelete(DeleteBehavior.SetNull)
+                        .IsRequired();
+
+                    b.HasOne("HospitalManagementSystem.Domain.Models.Department.Tag", "Tag")
+                        .WithMany()
+                        .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Bill");
@@ -347,6 +412,8 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Navigation("Patient");
 
                     b.Navigation("Room");
+
+                    b.Navigation("Tag");
                 });
 
             modelBuilder.Entity("HospitalManagementSystem.Domain.Models.Payments.Payment", b =>
@@ -375,7 +442,13 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .HasForeignKey("DepartmentId")
                         .OnDelete(DeleteBehavior.SetNull);
 
+                    b.HasOne("HospitalManagementSystem.Domain.Models.Department.Tag", "Tag")
+                        .WithMany()
+                        .HasForeignKey("TagId");
+
                     b.Navigation("Department");
+
+                    b.Navigation("Tag");
                 });
 
             modelBuilder.Entity("HospitalManagementSystem.Domain.Models.Department.Department", b =>

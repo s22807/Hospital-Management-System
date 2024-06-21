@@ -6,25 +6,56 @@
 @using HospitalManagementSystem.Application.Models;
 @model PatientDetailsDTO
 
-<div>
+<div class="container mt-4">
     <h2>Patient Details</h2>
-    <dl class="row">
-        <dt class="col-sm-3">First Name:</dt>
-        <dd class="col-sm-9">@Model.FirstName</dd>
+    <div class="col-md-6">
+        <h3>First Name: @Model.FirstName</h3>
+        <h3>Last Name: @Model.LastName</h3>
+        <h3>Pesel: @Model.Pesel</h3>
+        <h3>Birthdate: @Model.Birthdate.ToShortDateString()</h3>
+        <h3>Sex: @(Model.Sex ? "Male" : "Female")</h3>
+        <h3>Created At: @Model.CreatedAt.ToShortDateString()</h3>
+        @if (!string.IsNullOrEmpty(Model.MothersName))
+        {
+            <h3>Mother's Name: @Model.MothersName</h3>
+        }
+        @if (!string.IsNullOrEmpty(Model.FathersName))
+        {
+            <h3>Father's Name: @Model.FathersName</h3>
+        }
+        <h3>Insured: @(Model.Insured ? "Yes" : "No")</h3>
 
-        <dt class="col-sm-3">Last Name:</dt>
-        <dd class="col-sm-9">@Model.LastName</dd>
-
-        <dt class="col-sm-3">Pesel:</dt>
-        <dd class="col-sm-9">@Model.Pesel</dd>
-
-        <dt class="col-sm-3">Birthdate:</dt>
-        <dd class="col-sm-9">@Model.Birthdate.ToShortDateString()</dd>
-
-        <dt class="col-sm-3">Sex:</dt>
-        <dd class="col-sm-9">@Model.Sex</dd>
-
-        <dt class="col-sm-3">Created At:</dt>
-        <dd class="col-sm-9">@Model.CreatedAt</dd>
-    </dl>
+        <h2>Visits:</h2>
+        @if (Model.Visits.Any())
+        {
+            <ul>
+                @foreach (var visit in Model.Visits)
+                {
+                    <li>
+                        <strong>Visit ID:</strong> @visit.Id
+                        <strong>Date:</strong> @visit.VisitStartDate.ToShortDateString()
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <strong>No visits recorded.</strong>
+        }
+        @if (Model.DeletedAt.HasValue)
+        {
+            <h3>Deleted At: @Model.DeletedAt?.ToShortDateString()</h3>
+        }
+        @if (Model.LoggedAt.HasValue)
+        {
+            <h3>Logged At: @Model.LoggedAt?.ToShortDateString()</h3>
+        }
+        
+    </div>
+    <div class="col-md-6">
+        <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+        <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        <a asp-action="Create" asp-route-id="@Model.Id" asp-controller="Visit" class="btn btn-primary">Register Visit</a>
+    </div>
 </div>

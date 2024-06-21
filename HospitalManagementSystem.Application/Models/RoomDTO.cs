@@ -6,10 +6,12 @@ namespace HospitalManagementSystem.Application.Models
     {
         public Guid Id { get; set; }
         public int Number { get; set; }
+        public Guid? tagId { get; set; }
         public RoomDTO(Room room)
         {
             this.Id = room.Id;
             this.Number = room.Number;
+            this.tagId = room.TagId;
         }
     }
 }

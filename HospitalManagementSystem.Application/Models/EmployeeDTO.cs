@@ -14,6 +14,10 @@ namespace HospitalManagementSystem.Application.Models
         public int Salary { get; set; }
         public int VacationDays { get; set; }
         public string EmpKind { get; set; }
+        public int? VisitTime { get; set; }
+        public int? HoursWorked { get; set; }
+        public Guid? DepartmentId { get; set; }
+        public Guid? TagId { get; set; }
 
         public EmployeeDTO(Employee employee)
         {
@@ -27,7 +31,11 @@ namespace HospitalManagementSystem.Application.Models
             this.Salary = employee.Salary;
             this.VacationDays = employee.VacationDays;
             this.EmpKind = employee.Role.ToString();
+            this.VisitTime = employee.VisitTime;
+            this.HoursWorked = employee.HoursWorked;
+            this.TagId = employee.TagId;
         }
+        public EmployeeDTO() { }
         
     }
 }

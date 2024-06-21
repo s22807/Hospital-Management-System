@@ -4050,11 +4050,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj",
       "projectName": "HospitalManagementSystem.Domain",
-      "projectPath": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj",
+      "projectPath": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj",
       "packagesPath": "C:\\Users\\SzymonGajda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\obj\\",
+      "outputPath": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

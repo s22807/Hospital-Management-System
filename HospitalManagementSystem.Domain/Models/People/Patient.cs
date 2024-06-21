@@ -1,5 +1,6 @@
 ﻿using HospitalManagementSystem.Domain.Models.Department;
 using HospitalManagementSystem.Domain.Models.Payments;
+using System.ComponentModel.DataAnnotations;
 
 namespace HospitalManagementSystem.Domain.Models.People
 {
@@ -9,8 +10,19 @@ namespace HospitalManagementSystem.Domain.Models.People
         public DateTime CreatedAt { get; private set; }
         public virtual IEnumerable<Visit> Visits { get; set; } = Enumerable.Empty<Visit>();
         public virtual IEnumerable<Payment> Payments { get; set; } = Enumerable.Empty<Payment>();
-        public DateTime DeletedAt { get; private set; }
-        public DateTime LoggedAt { get; private set; }
+        public DateTime? DeletedAt { get; private set; }
+        public DateTime? LoggedAt { get; private set; }
+        public string? Email;
+        public string? Username;
+        public string? Password;
+        public void Login()
+        {
+            this.LoggedAt = DateTime.Now;
+        }
+        public void Delete()
+        {
+            this.DeletedAt = DateTime.Now;
+        }
 
         //IF PATIENT IS A CHILD
         public string? MothersName { get; private set; }
@@ -19,7 +31,7 @@ namespace HospitalManagementSystem.Domain.Models.People
 
         public bool Insured { get; private set; }
 
-
+        public string Role => "Patient";
 
         public void AddVisit(Visit visit)
         {
@@ -39,16 +51,6 @@ namespace HospitalManagementSystem.Domain.Models.People
                 }
                 
             }
-        }
-
-        public void Login(IUser u)
-        {
-            LoggedAt = DateTime.Now;
-        }
-
-        public void Delete()
-        {
-            DeletedAt = DateTime.Now;
         }
 
         public void SetMothersName(string name)
@@ -80,6 +82,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             SetFathersName(FathersName);
             Insured = insured;
         }
+        
         
         
     }

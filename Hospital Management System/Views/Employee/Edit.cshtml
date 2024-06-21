@@ -24,8 +24,17 @@
             <div class="form-group">
                 <label for="sex">Sex:</label>
                 <select class="form-control" id="sex" name="sex" required>
-                    <option value="@false">Male</option>
-                    <option value="@true">Female</option>
+                    @if (Model.Sex)
+                    {
+                        <option value="@false">Male</option>
+                        <option value="@true" selected>Female</option>
+                    } else
+                    {
+                        <option value="@false" selected>Male</option>
+                        <option value="@true">Female</option>
+                        
+                    }
+                    
                 </select>
             </div>
             <div class="form-group">
@@ -40,15 +49,14 @@
                 <label for="salary">Salary:</label>
                 <input type="number" class="form-control" id="salary" name="salary" value="@Model.Salary" required min="1">
             </div>
-            <div class="form-group">
-                <label for="role">Role:</label>
-                <select class="form-control" id="empKind" name="empKind" required>
-                    <option value="Trainee">Trainee</option>
-                    <option value="Receptionist">Receptionist</option>
-                    <option value="Doctor">Doctor</option>
-                    <option value="Admin">Admin</option>
-                </select>
-            </div>
+            @if (Model.EmpKind == "Doctor")
+            {
+                <div class="form-group">
+                    <label for="visitTime">Expected Visit Time: </label>
+                    <input type="number" class="form-control" id="visitTime" name="visitTime" value="@Model.VisitTime" required />
+                </div>
+            }
+            
             <button type="submit" class="btn btn-primary">Update</button>
         </fieldset>
     </div>

@@ -45,6 +45,14 @@ namespace HospitalManagementSystem.Infrastructure.Repository
             await _context.SaveChangesAsync();
         }
 
-        
+        public async Task UpdateRoomAsync(Room room)
+        {
+            _context.Rooms.Update(room);
+            await _context.SaveChangesAsync();
+        }
+
+        public async Task<IEnumerable<Room>> GetRoomsForTagAsync(Guid tagId)
+            => await _context.Rooms.Where(e => e.TagId == tagId).ToListAsync();
+
     }
 }

@@ -1,6 +1,6 @@
-﻿using HospitalManagementSystem.Domain.Models.Payments;
+﻿using HospitalManagementSystem.Domain.Models.Department;
+using HospitalManagementSystem.Domain.Models.Payments;
 using HospitalManagementSystem.Domain.Models.People;
-
 
 namespace HospitalManagementSystem.Domain.Models.Department
 {
@@ -8,45 +8,59 @@ namespace HospitalManagementSystem.Domain.Models.Department
     public class Visit
     {
         public Guid Id { get; private set; }
-        public DateTime VisitDate { get; private set; }
+        public DateTime VisitStartDate { get; private set; }
         public DateTime CreatedAt { get; private set; }
-        public DateTime? UpdatedAt { get; private set; }
-        public Guid? DoctorId { get; private set; }
+        public Guid DoctorId { get; private set; }
         public Guid PatientId { get; private set; }
-        public Guid? RoomId { get; private set; }
-        public Guid BillId { get; private set; }
-        
-        public virtual Employee? Doctor { get; private set; }
+        public Guid RoomId { get; private set; }
+        public Guid? BillId { get; private set; }
+        public Guid? TagId { get; private set; }
+
+        public virtual Employee Doctor { get; private set; }
         public virtual Patient Patient { get; private set; }
-        public virtual Room? Room { get; private set; }
-        public virtual Bill Bill { get; private set; }
+        public virtual Room Room { get; private set; }
+        public virtual Bill? Bill { get; private set; }
+        public virtual Tag? Tag { get; private set; }
         public static double VisitCost { get; private set; } = 1000;
 
-        private Visit(Guid patientId, Guid? doctorId, Guid? roomId, Guid billId, DateTime visitDate)
+
+        private Visit(Guid patientId, Guid doctorId, Guid roomId, Guid? billId, DateTime visitStartDate, Guid? tagId)
         {
             Id = Guid.NewGuid();
-            SetVisitDate(visitDate);
+            SetVisitDate(visitStartDate);
             CreatedAt = DateTime.Now;
-            UpdatedAt = null;
             PatientId = patientId;
             DoctorId = doctorId;
             RoomId = roomId;
             BillId = billId;
+            TagId = tagId;
         }
-        private Visit(Patient patient, Employee? doctor, Room? room, Bill bill, DateTime visitDate)
+        private Visit(Patient patient, Employee doctor, Room? room, Bill bill, DateTime visitStartDate, Tag? tag)
         {
             Id = Guid.NewGuid();
-            SetVisitDate(visitDate);
+            SetVisitDate(visitStartDate);
             CreatedAt = DateTime.Now;
-            UpdatedAt = null;
             SetPatient(patient);
             SetDoctor(doctor);
             SetRoom(room);
             SetBill(bill);
+            SetTag(tag);
+        }
+        public Visit(Guid patientId, Guid doctorId, Guid roomId, DateTime visitStartDate, Guid? tagId)
+        {
+            Id = Guid.NewGuid();
+            SetVisitDate(visitStartDate);
+            CreatedAt = DateTime.Now;
+            PatientId = patientId;
+            DoctorId = doctorId;
+            RoomId= roomId;
+            //var bill = new Bill(Id, VisitCost);
+            TagId = tagId;
+
         }
 
-        public static Visit Create(Patient patient, Employee? doctor, Room? room, Bill bill, DateTime visitDate)
-            => new(patient, doctor, room, bill, visitDate);
+        public static Visit Create(Patient patient, Employee doctor, Room? room, Bill bill, DateTime visitStartDate, Tag? tag)
+            => new(patient, doctor, room, bill, visitStartDate, tag);
 
         public static void SetVisitCost(double cost)
         {
@@ -68,14 +82,9 @@ namespace HospitalManagementSystem.Domain.Models.Department
             {
                 throw new ArgumentException("Visit date cannot be in the past.");
             }
-            VisitDate = value;
-
+            VisitStartDate = value;
         }
-        private void Update()
-        {
-            UpdatedAt = DateTime.Now;
-        }
-        public void SetDoctor(Employee? value)
+        public void SetDoctor(Employee value)
         {
             if (value != null && value.Role == Employee.EmpKind.Doctor)
             {
@@ -119,9 +128,10 @@ namespace HospitalManagementSystem.Domain.Models.Department
                 throw new ArgumentException("Bill must exist.");
             }
         }
-
-
-
-
+        private void SetTag(Tag? tag)
+        {
+            Tag = tag;
+        }
+        
     }
 }

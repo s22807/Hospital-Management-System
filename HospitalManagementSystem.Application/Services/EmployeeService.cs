@@ -1,6 +1,7 @@
 ﻿using HospitalManagementSystem.Application.Models;
 using HospitalManagementSystem.Application.Repositories;
 using HospitalManagementSystem.Domain.Models.People;
+using System.Data;
 
 namespace HospitalManagementSystem.Application.Services
 {
@@ -8,17 +9,21 @@ namespace HospitalManagementSystem.Application.Services
     {
         Task<IEnumerable<EmployeeDTO>> GetEmployeesAsync();
         Task<EmployeeDTO?> GetEmployeeByIdAsync(Guid id);
-        Task CreateEmployeeAsync(EmployeeCreateDTO employeeCreateDTO);
+        Task CreateEmployeeAsync(CreateEmployeeDTO employeeCreateDTO);
         Task RemoveEmployeeAsync(Guid employeeId);
+        Task TagEmployee(Guid employeeId, Guid tagId);
+        Task UpdateEmployee(EmployeeDTO employeeDTO);
     }
     internal class EmployeeService : IEmployeeService
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IDepartmentRepository _departmentRepository;
-
-        public EmployeeService(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository) {
+        private readonly ITagRepository _tagRepository;
+        public EmployeeService(IEmployeeRepository employeeRepository, IDepartmentRepository departmentRepository, ITagRepository tagRepository = null)
+        {
             _employeeRepository = employeeRepository;
             _departmentRepository = departmentRepository;
+            _tagRepository = tagRepository;
         }
 
         public async Task<IEnumerable<EmployeeDTO>> GetEmployeesAsync()
@@ -30,32 +35,57 @@ namespace HospitalManagementSystem.Application.Services
 
         public async Task<EmployeeDTO?> GetEmployeeByIdAsync(Guid id)
         {
-            var e = await _employeeRepository.GetEmployeeByIdAsync(id);
+            var e = await _employeeRepository.GetEmployeeAsync(id);
             if (e == null)
             {
                 return null;
             }
             return new EmployeeDTO(e);
         }
-        public async Task CreateEmployeeAsync(EmployeeCreateDTO employeeCreateDTO)
+        public async Task CreateEmployeeAsync(CreateEmployeeDTO employeeCreateDTO)
         {
             var dept = await _departmentRepository.GetDepartmentDetailsAsync(employeeCreateDTO.DepartmentId);
             Employee.EmpKind empKind;
             Enum.TryParse(employeeCreateDTO.EmpKind, out empKind);
 
             var emp = new Employee(employeeCreateDTO.Salary, DateTime.Now.AddYears(2), dept, empKind,
-                employeeCreateDTO.FirstName, employeeCreateDTO.LastName, employeeCreateDTO.Pesel, employeeCreateDTO.BirthDate, employeeCreateDTO.Sex);
+                employeeCreateDTO.FirstName, employeeCreateDTO.LastName, employeeCreateDTO.Pesel, employeeCreateDTO.BirthDate, employeeCreateDTO.Sex, employeeCreateDTO.VisitTime);
             await _employeeRepository.Add(emp);
         }
 
         public async Task RemoveEmployeeAsync(Guid employeeId)
         {
-            var emp = await _employeeRepository.GetAsync(employeeId);
+            var emp = await _employeeRepository.GetEmployeeAsync(employeeId);
             if (emp == null)
             {
                 return;
             }
             await _employeeRepository.Remove(emp);
+        }
+        public async Task UpdateEmployee(EmployeeDTO employeeDTO)
+        {
+            var employee = await _employeeRepository.GetEmployeeAsync(employeeDTO.Id);
+            if (employee == null) throw new Exception("Employee not found.");
+            employee.SetFirstname(employeeDTO.FirstName);
+            employee.SetLastname(employeeDTO.LastName);
+            employee.SetPesel(employeeDTO.Pesel);
+            employee.Sex = employeeDTO.Sex;
+            employee.SetSalary(employeeDTO.Salary);
+            employee.SetVacationDays(employeeDTO.VacationDays);
+            employee.SetFireDate(employeeDTO.FireDate);
+            employee.SetBirthDate(employeeDTO.Birthdate);
+            employee.SetVisitTime(employeeDTO.VisitTime);
+            await _employeeRepository.UpdateEmployeeAsync(employee);
+        }
+
+        public async Task TagEmployee(Guid employeeId, Guid tagId)
+        {
+            var employee = await _employeeRepository.GetEmployeeAsync(employeeId);
+            var tag = await _tagRepository.GetTagAsync(tagId);
+            if (employee != null && tag != null) {
+                employee.SetTag(tag);
+                await _employeeRepository.UpdateEmployeeAsync(employee);
+            }
         }
     }
 }
