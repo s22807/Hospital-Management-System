@@ -4,7 +4,7 @@
 @{
 }
 @using HospitalManagementSystem.Application.Models;
-@model PatientDetailsDTO
+@model PatientDTO
 
 
 <form asp-action="Edit" method="post">
@@ -21,8 +21,8 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Pesel"></label>
-        <input asp-for="Pesel" class="form-control" />
+        <label for="pesel">PESEL (11 digits):</label>
+        <input asp-for="Pesel" type="text" class="form-control" pattern="[0-9]{11}" required />
     </div>
 
     <div class="form-group">
@@ -31,10 +31,10 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Sex"></label>
-        <select asp-for="Sex" class="form-control">
-            <option value="true" selected>Male</option>
-            <option value="false">Female</option>
+        <label for="sex">Sex:</label>
+        <select class="form-control" id="sex" name="sex" required>
+            <option value="@false">Male</option>
+            <option value="@true">Female</option>
         </select>
     </div>
 

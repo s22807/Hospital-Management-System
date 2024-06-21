@@ -4,7 +4,7 @@
 @{
 }
 @using HospitalManagementSystem.Application.Models;
-@model EmployeeCreateDTO
+@model CreateEmployeeDTO
 <div class="container mt-4">
     <h2>Create Employee</h2>
     <hr>
@@ -42,6 +42,11 @@
                 <option value="Admin">Admin</option>
             </select>
         </div>
+        
+        <div class="form-group" id="visitTimeField" style="display: none;">
+            <label for="visitTime">Expected Visit Time:</label>
+            <input type="number" class="form-control" id="visitTime" name="visitTime" />
+        </div>
         <div class="form-group">
             <label for="salary">Salary:</label>
             <input type="number" class="form-control" id="salary" name="salary" required />
@@ -49,3 +54,21 @@
         <button type="submit" value="Create" class="btn btn-primary">Create Employee</button>
     </form>
 </div>
+
+<script>
+    const roleSelect = document.getElementById('empKind');
+    const visitTimeField = document.getElementById('visitTimeField');
+    const visitTimeInput = document.getElementById('visitTime');
+
+    roleSelect.addEventListener('change', function () {
+        const selectedRole = roleSelect.value;
+
+        if (selectedRole === 'Doctor') {
+            visitTimeField.style.display = 'block';
+            visitTimeInput.setAttribute('required', 'required');
+        } else {
+            visitTimeField.style.display = 'none';
+            visitTimeInput.removeAttribute('required');
+        }
+    });
+</script>

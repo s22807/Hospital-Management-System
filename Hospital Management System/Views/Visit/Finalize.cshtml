@@ -1,0 +1,67 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model VisitSlotDTO
+@using HospitalManagementSystem.Application.Models;
+
+<h2>Finalize Visit Slot</h2>
+
+
+@if (ViewBag.Patients != null)
+{
+    @*<h3>Search Patients</h3>
+    <form asp-action="SearchPatients" method="post">
+        <input type="hidden" name="chosenVisitSlotDTO.DoctorId" value="@Model.DoctorId" />
+        <input type="hidden" name="chosenVisitSlotDTO.RoomId" value="@Model.RoomId" />
+        <input type="hidden" name="chosenVisitSlotDTO.RoomNumber" value="@Model.RoomNumber" />
+        <input type="hidden" name="chosenVisitSlotDTO.TagId" value="@Model.TagId" />
+        <input type="hidden" name="chosenVisitSlotDTO.VisitStartDate" value="@Model.VisitStartDate" />
+        <input type="hidden" name="chosenVisitSlotDTO.VisitEndDate" value="@Model.VisitEndDate" />
+        <input type="hidden" name="chosenVisitSlotDTO.TagName" value="@Model.TagName" />
+        <input type="text" name="firstname" placeholder="First Name" />
+        <input type="text" name="lastname" placeholder="Last Name" />
+        <input type="text" name="pesel" placeholder="PESEL" />
+        <button type="submit">Search</button>
+    </form>*@
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Patient ID</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>PESEL</th>
+                <!-- Add other necessary headers -->
+                <th>Select</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var patient in ViewBag.Patients)
+            {
+                <tr>
+                    <td>@patient.Id</td>
+                    <td>@patient.FirstName</td>
+                    <td>@patient.LastName</td>
+                    <td>@patient.Pesel</td>
+                    <!-- Add other patient details -->
+                    <td>
+                        <form  asp-action="SelectPatient" method="post">
+                            <input type="hidden" name="DoctorId" value="@Model.DoctorId" />
+                            <input type="hidden" name="RoomId" value="@Model.RoomId" />
+                            <input type="hidden" name="RoomNumber" value="@Model.RoomNumber" />
+                            <input type="hidden" name="TagId" value="@Model.TagId" />
+                            <input type="hidden" name="VisitStartDate" value="@Model.VisitStartDate" />
+                            <input type="hidden" name="VisitEndDate" value="@Model.VisitEndDate" />
+                            <input type="hidden" name="TagName" value="@Model.TagName" />
+                            <input type="hidden" name="PatientId" value="@patient.Id" />
+                            <!-- Add other necessary hidden fields -->
+                            <button type="submit">Select</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

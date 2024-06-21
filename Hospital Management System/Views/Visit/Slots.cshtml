@@ -1,0 +1,54 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@using HospitalManagementSystem.Application.Models;
+@model List<VisitSlotDTO>
+
+<h2>Available Slots</h2>
+
+@if (Model.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Doctor</th>
+                <th>Room Number</th>
+                <th>Visit Start Date</th>
+                <th>Visit End Date</th>
+                <th>Tag Name</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var slot in Model)
+            {
+                <tr>
+                    <td>@slot.DoctorId</td>
+                    <td>@slot.RoomNumber</td>
+                    <td>@slot.VisitStartDate</td>
+                    <td>@slot.VisitEndDate</td>
+                    <td>@slot.TagName</td>
+                    <td>
+                        <form asp-action="Finalize" method="post">
+                            <input type="hidden" name="chosenVisitSlotDTO.DoctorId" value="@slot.DoctorId" />
+                            <input type="hidden" name="chosenVisitSlotDTO.RoomId" value="@slot.RoomId" />
+                            <input type="hidden" name="chosenVisitSlotDTO.RoomNumber" value="@slot.RoomNumber" />
+                            <input type="hidden" name="chosenVisitSlotDTO.TagId" value="@slot.TagId" />
+                            <input type="hidden" name="chosenVisitSlotDTO.VisitStartDate" value="@slot.VisitStartDate" />
+                            <input type="hidden" name="chosenVisitSlotDTO.VisitEndDate" value="@slot.VisitEndDate" />
+                            <input type="hidden" name="chosenVisitSlotDTO.TagName" value="@slot.TagName" />
+                            <button type="submit">Choose Slot</button>
+                        </form>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No available slots</p>
+}

@@ -6,6 +6,8 @@ namespace HospitalManagementSystem.Application.Repositories
     {
         Task CreateVisitAsync(Visit visit);
         Task<Visit> GetAsync(Guid id);
+        Task<IEnumerable<VisitSlot>> GetFreeSlots(Tag tag);
+        Task<IEnumerable<Visit>> GetVisitSince(DateTime now);
         Task UpdateAsync(Visit visit);
     }
 }

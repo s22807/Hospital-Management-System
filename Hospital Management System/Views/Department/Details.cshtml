@@ -19,16 +19,47 @@
                 @foreach (var employee in Model.Employees)
                 {
                     <li class="list-group-item">
-                        <strong>ID:</strong> @employee.Id, 
+                        <strong>ID:</strong> @employee.Id,
                         <br />
-                        <strong>Name:</strong> @(employee.FirstName + " " + employee.LastName), 
-                        <strong>Role:</strong> @employee.EmpKind,
-                        <></>
+                        <strong>Name:</strong> @(employee.FirstName + " " + employee.LastName),
+                        <strong>Role:</strong> @employee.EmpKind
+                        @if (employee.EmpKind == "Doctor")
+                        {
+                            <form id="tagForm-@employee.Id" method="post" action="@Url.Action("TagEmployee", "Employee")">
+                            <input type="hidden" name="employeeId" value="@employee.Id" />
+                            <input type="hidden" name="departmentId" value="@Model.Id" />
+                            <label for="tagSelect">Tag:</label>
+                            <select class="form-control tagSelect" id="tagSelect-@employee.Id" name="tagId">
+                                @foreach (var tag in ViewBag.Tags)
+                                {
+                                    @if (tag.Id == employee.TagId)
+                                    {
+                                        <option value="@tag.Id" selected>@tag.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@tag.Id">@tag.Name</option>
+                                    }
+
+                                }
+                            </select>
+                            </form>
+                        }
+
                         <form method="post" asp-controller="Employee" asp-action="Remove">
                             <input type="hidden" name="employeeId" value="@employee.Id" />
                             <input type="hidden" name="departmentId" value="@Model.Id" />
                             <button type="submit" class="btn btn-danger btn-sm float-right">Remove</button>
                         </form>
+                        <script>
+                            document.getElementById(`tagSelect-@employee.Id`).addEventListener('change', function () {
+                                const tagId = this.value;
+                                const form = document.getElementById(`tagForm-@employee.Id`);
+
+                                form.querySelector('[name="tagId"]').value = tagId;
+                                form.submit();
+                            });
+                        </script>
                     </li>
                 }
             </ul>
@@ -42,14 +73,45 @@
                 @foreach (var room in Model.Rooms)
                 {
                     <li class="list-group-item">
+                        <form id="tagForm-@room.Id" method="post" action="@Url.Action("TagRoom", "Department")">
+                            <input type="hidden" name="roomId" value="@room.Id" />
+                            <input type="hidden" name="departmentId" value="@Model.Id" />
+
+                            <!-- Replacing ID display with a selectable list -->
+                            <label for="tagSelect">Tag:</label>
+                            <select class="form-control tagSelect" id="tagSelect-@room.Id" name="tagId">
+                                @foreach (var tag in ViewBag.Tags)
+                                {
+                                    @if (tag.Id == room.tagId)
+                                    {
+                                        <option value="@tag.Id" selected>@tag.Name</option>
+                                    }
+                                    else
+                                    {
+                                        <option value="@tag.Id">@tag.Name</option>
+                                    }
+
+                                }
+                            </select>
+
+                        </form>
+                        <strong>Room Number:</strong> @room.Number
                         <form method="post" asp-action="RemoveRoom">
                             <input type="hidden" name="roomId" value="@room.Id" />
                             <input type="hidden" name="departmentId" value="@Model.Id" />
-                            <strong>ID:</strong> @room.Id,
-                            <strong>Room Number:</strong> @room.Number
                             <button type="submit" class="btn btn-danger btn-sm float-right">Remove</button>
                         </form>
+                        <script>
+                            document.getElementById(`tagSelect-@room.Id`).addEventListener('change', function () {
+                                const tagId = this.value;
+                                const form = document.getElementById(`tagForm-@room.Id`);
+
+                                form.querySelector('[name="tagId"]').value = tagId;
+                                form.submit();
+                            });
+                        </script>
                     </li>
+
                 }
             </ul>
 
@@ -57,7 +119,7 @@
             <form method="post" asp-action="AddRoom">
                 <div class="form-group">
                     <label for="roomNumber">Room Number:</label>
-                    <input type="number" class="form-control" id="roomNumber" name="roomNumber" min="1"/>
+                    <input type="number" class="form-control" id="roomNumber" name="roomNumber" min="1" />
                     <input type="hidden" name="departmentId" value="@Model.Id" />
                 </div>
                 <button type="submit" class="btn btn-success">Add Room</button>
@@ -65,3 +127,4 @@
         </div>
     </div>
 </div>
+

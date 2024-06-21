@@ -11,6 +11,9 @@ namespace HospitalManagementSystem.Application.Models
         public DateTime Birthdate { get; set; }
         public bool Sex { get; set; }
         public DateTime CreatedAt { get; set; }
+        public string? MothersName { get; set; }
+        public string? FathersName { get; set; }
+        public bool Insured { get; set; } 
 
         public PatientDTO(Patient patient)
         {
@@ -21,6 +24,13 @@ namespace HospitalManagementSystem.Application.Models
             Birthdate = patient.BirthDate;
             Sex = patient.Sex;
             CreatedAt = patient.CreatedAt;
+            MothersName = patient.MothersName;
+            FathersName = patient.FathersName;
+            Insured = patient.Insured;
+        }
+        public PatientDTO()
+        {
+            
         }
     }
 }

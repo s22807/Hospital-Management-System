@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HospitalManagementSystem.Application.Models
 {
-    public class EmployeeCreateDTO
+    public class CreateEmployeeDTO
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -16,5 +16,6 @@ namespace HospitalManagementSystem.Application.Models
         public int Salary { get; set; }
         public Guid DepartmentId { get; set; }
         public string EmpKind { get; set; }
+        public int VisitTime { get; set; }
     }
 }

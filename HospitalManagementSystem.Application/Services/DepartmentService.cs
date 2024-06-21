@@ -12,12 +12,17 @@ namespace HospitalManagementSystem.Application.Services
         Task<DepartmentDetailsDTO> GetDepartmentDetailsAsync(Guid id);
         Task AddRoomAsync(int roomNumber, Guid departmentId);
         Task RemoveRoomAsync(Guid roomId);
+        Task TagRoom(Guid roomId, Guid tagId);
     }
     internal class DepartmentService : IDepartmentService
     {
         private readonly IDepartmentRepository _departmentRepository;
-        public DepartmentService(IDepartmentRepository departmentRepository)
-            => _departmentRepository = departmentRepository;
+        private readonly ITagRepository _tagRepository;
+        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository)
+        {
+            _departmentRepository = departmentRepository;
+            _tagRepository = tagRepository;
+        }
 
         public async Task CreateDepartmentAsync(string name)
         {
@@ -58,6 +63,15 @@ namespace HospitalManagementSystem.Application.Services
             await _departmentRepository.RemoveRoomAsync(room);
         }
 
-        
+        public async Task TagRoom(Guid roomId, Guid tagId)
+        {
+            var room = await _departmentRepository.GetRoomAsync(roomId);
+            var tag = await _tagRepository.GetTagAsync(tagId);
+            if (room!=null && tag != null)
+            {
+                room.Tag = tag;
+                await _departmentRepository.UpdateRoomAsync(room);
+            }
+        }
     }
 }

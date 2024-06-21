@@ -21,7 +21,9 @@ namespace HospitalManagementSystem.Infrastructure
             return serviceCollection.AddScoped<IPatientRepository, PatientRepository>()
                 .AddScoped<IEmployeeRepository, EmployeeRepository>()
                 .AddScoped<IDepartmentRepository, DepartmentRepository>()
-                .AddScoped<IVisitRepository, VisitRepository>();
+                .AddScoped<IVisitRepository, VisitRepository>()
+                .AddScoped<ITagRepository, TagRepository>()
+                .AddScoped<IUserRepository, UserRepository>();
         }
 	}
 }
