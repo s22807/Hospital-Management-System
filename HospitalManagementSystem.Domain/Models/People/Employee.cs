@@ -1,4 +1,5 @@
 ﻿using HospitalManagementSystem.Domain.Models.Department;
+using HospitalManagementSystem.Domain.Models.Department;
 
 namespace HospitalManagementSystem.Domain.Models.People
 {
@@ -12,25 +13,47 @@ namespace HospitalManagementSystem.Domain.Models.People
             Doctor = 2,
             Admin = 3
         }
+        public static bool CheckRole(string roleToCheck)
+        {
+            return Enum.TryParse(roleToCheck, out EmpKind result);
+        }
 
         public Guid Id { get; private set; }
         public int Salary { get; private set; }
         public int VacationDays { get; private set; }
         public DateTime FireDate { get; private set; }
         public EmpKind Role { get; private set; }
+        string IUser.Role => Role.ToString();
         public Guid? DepartmentId { get; private set; }
+        public Guid? TagId { get; private set; }
         public virtual Department.Department? Department { get; private set; }
-        public virtual IEnumerable<Visit> Visits { get; private set; } = Enumerable.Empty<Visit>();
+        public virtual ICollection<Visit> Visits { get; private set; } 
         public virtual ICollection<Room.Key> RentedKeys { get; private set; } = new List<Room.Key>();
+        public virtual Tag? Tag { get; private set; }
 
         public DateTime CreatedAt { get; private set; }
-        public DateTime DeletedAt { get; private set; }
-        public DateTime LoggedAt { get; private set; }
+        public DateTime? DeletedAt { get; private set; }
+        public DateTime? LoggedAt { get; private set; }
+        public string? Email;
+        public string? Username;
+        public string? Password;
+        public void Login()
+        {
+            this.LoggedAt = DateTime.Now;
+        }
+        public void Delete()
+        {
+            this.DeletedAt = DateTime.Now;
+        }
+        public int? VisitTime { get; private set; } //in minutes
+        public int? HoursWorked { get; private set; }
+        private static int TrainingTime = 80;
+
         public static int DefaultVaccationDays = 2;
         //public static DateTime = DateTime.Now.AddYears(2);
 
         public Employee(int salary, DateTime fireDate, Department.Department? department, EmpKind role
-            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex)
+            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
             : base(firstName, lastName, pesel, birthDate, sex)
         {
             Id = Guid.NewGuid();
@@ -39,42 +62,60 @@ namespace HospitalManagementSystem.Domain.Models.People
             SetFireDate(fireDate);
             SetDepartment(department);
             SetRole(role);
-        }
-        public Employee(Guid empId, int salary, int vacationDays, DateTime fireDate, Department.Department? department
-            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex)
-            : base(firstName, lastName, pesel, sex)
-        {
-            Id = empId;
-            SetSalary(salary);
-            SetVacationDays(vacationDays);
-            SetFireDate(fireDate);
-            SetDepartment(department);
-            SetRole(EmpKind.Trainee);
             SetBirthDate(birthDate);
+            SetVisitTime(visitTime);
         }
-        private Employee(int salary, int vacationDays, DateTime fireDate
-            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex)
-            : base(firstName, lastName, pesel, sex)
+        public Employee(int salary, DateTime fireDate, EmpKind role
+            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
+            : base(firstName, lastName, pesel, birthDate, sex)
         {
             Id = Guid.NewGuid();
             SetSalary(salary);
-            SetVacationDays(vacationDays);
+            SetVacationDays(DefaultVaccationDays);
             SetFireDate(fireDate);
+            
+            SetRole(role);
             SetBirthDate(birthDate);
-            SetRole(EmpKind.Trainee);
+            SetVisitTime(visitTime);
         }
-        private Employee(Guid empId, int salary, int vacationDays, DateTime fireDate
-            , string firstName, string lastName, string pesel, DateTime birthDate, bool sex)
-            : base(firstName, lastName, pesel, sex)
-        {
-            Id = empId;
-            SetSalary(salary);
-            SetVacationDays(vacationDays);
-            SetFireDate(fireDate);
-            SetBirthDate(birthDate);
-            SetRole(EmpKind.Trainee);
-        }
-        private void SetSalary(int value)
+        //public Employee(Guid empId, int salary, int vacationDays, DateTime fireDate, Department.Department? department
+        //    , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
+        //    : base(firstName, lastName, pesel, sex)
+        //{
+        //    Id = empId;
+        //    SetSalary(salary);
+        //    SetVacationDays(vacationDays);
+        //    SetFireDate(fireDate);
+        //    SetDepartment(department);
+        //    SetRole(EmpKind.Trainee);
+        //    SetBirthDate(birthDate);
+        //    SetVisitTime(visitTime);
+        //}
+        //private Employee(int salary, int vacationDays, DateTime fireDate
+        //    , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
+        //    : base(firstName, lastName, pesel, sex)
+        //{
+        //    Id = Guid.NewGuid();
+        //    SetSalary(salary);
+        //    SetVacationDays(vacationDays);
+        //    SetFireDate(fireDate);
+        //    SetBirthDate(birthDate);
+        //    SetRole(EmpKind.Trainee);
+        //    SetVisitTime(visitTime);
+        //}
+        //private Employee(Guid empId, int salary, int vacationDays, DateTime fireDate
+        //    , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
+        //    : base(firstName, lastName, pesel, sex)
+        //{
+        //    Id = empId;
+        //    SetSalary(salary);
+        //    SetVacationDays(vacationDays);
+        //    SetFireDate(fireDate);
+        //    SetBirthDate(birthDate);
+        //    SetRole(EmpKind.Trainee);
+        //    SetVisitTime(visitTime);
+        //}
+        public void SetSalary(int value)
         {
             if (value > 0)
             {
@@ -85,7 +126,7 @@ namespace HospitalManagementSystem.Domain.Models.People
                 throw new ArgumentException("Salary cannot be below 0.");
             }
         }
-        private void SetVacationDays(int value)
+        public void SetVacationDays(int value)
         {
             if (value > 0)
             {
@@ -96,7 +137,7 @@ namespace HospitalManagementSystem.Domain.Models.People
                 throw new ArgumentException("Vacation days cannot be below 0.");
             }
         }
-        private void SetFireDate(DateTime value)
+        public void SetFireDate(DateTime value)
         {
             if (value > DateTime.Now)
             {
@@ -108,7 +149,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             }
         }
 
-        private void SetRole(EmpKind value)
+        public void SetRole(EmpKind value)
         {
             if (this.FireDate < DateTime.Now)
             {
@@ -151,17 +192,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             }
         }
 
-        public void Login(IUser u)
-        {
-            this.LoggedAt = DateTime.Now;
-        }
-
-        public void Delete()
-        {
-            throw new NotImplementedException();
-        }
-        
-        private void SetBirthDate(DateTime value)
+        public override void SetBirthDate(DateTime value)
         {
             if (value > new DateTime(1900, 1, 1, 0, 0, 0) && DateTime.Now.Year - value.Year > 16)
             {
@@ -170,6 +201,34 @@ namespace HospitalManagementSystem.Domain.Models.People
             else
             {
                 throw new ArgumentException("Birthdate cannot be before 1900 and age cannot be below 16.");
+            }
+        }
+
+        public void SetTag(Tag tag)
+        {
+            Tag = tag;
+        }
+        public void SetVisitTime(int? time)
+        {
+            if(this.Role != EmpKind.Doctor)
+            {
+                return;
+            }
+            if (time > 0 && time < 60)
+            {
+                VisitTime = time;
+            } else
+            {
+                throw new ArgumentException($"Unrealistic visit time {time}min");
+            }
+        }
+        public void AddHoursWorked(int hours)
+        {
+            HoursWorked += hours;
+            if (HoursWorked >= TrainingTime && Role == EmpKind.Trainee)
+            {
+                SetRole(EmpKind.Receptionist);
+                SetSalary((int)(Salary * 1.2));
             }
         }
 

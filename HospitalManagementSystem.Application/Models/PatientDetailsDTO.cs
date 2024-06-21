@@ -4,12 +4,16 @@ namespace HospitalManagementSystem.Application.Models
 {
     public class PatientDetailsDTO
     {
-        
+        public Guid Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Pesel { get; set; }
         public DateTime Birthdate { get; set; }
         public bool Sex { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public string? MothersName { get; set; }
+        public string? FathersName { get; set; }
+        public bool Insured { get; set; }
         public PatientDetailsDTO(Patient patient)
         {
             Id = patient.Id;
@@ -24,15 +28,14 @@ namespace HospitalManagementSystem.Application.Models
             LoggedAt = patient.LoggedAt;
             MothersName = patient.MothersName;
             FathersName = patient.FathersName;
+            Insured = patient.Insured;
         }
 
-        public Guid Id { get; set; }
-        public DateTime CreatedAt { get; set; }
+        
         public IEnumerable<VisitDTO> Visits { get; set; } = Enumerable.Empty<VisitDTO>();
-        public DateTime DeletedAt { get; set; }
-        public DateTime LoggedAt { get; set; }
-        public string? MothersName { get; set; }
-        public string? FathersName { get; set; }
+        public DateTime? DeletedAt { get; set; }
+        public DateTime? LoggedAt { get; set; }
+        
 
     }
 }

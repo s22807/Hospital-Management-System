@@ -8,9 +8,11 @@ namespace HospitalManagementSystem.Controllers
     public class DepartmentController : Controller
     {
         private readonly IDepartmentService _departmentService;
-        public DepartmentController(IDepartmentService departmentService)
+        private readonly ITagService _tagService;
+        public DepartmentController(IDepartmentService departmentService, ITagService tagService)
         {
             _departmentService = departmentService;
+            _tagService = tagService;
         }
         public Task<IEnumerable<DepartmentDTO>> GetDepartments()
             => _departmentService.GetDepartmentsAsync();
@@ -26,12 +28,12 @@ namespace HospitalManagementSystem.Controllers
         // GET: DepartmentController/Details/5
         public async Task<ActionResult> Details(Guid id)
         {
-            
+            ViewBag.Tags = await _tagService.GetTagsAsync();
             return View(await GetDepartmentDetailsDTO(id));
         }
 
         // GET: DepartmentController/Create
-        [HttpPost]
+        
         public async Task<ActionResult> Create(string name)
         {
             await _departmentService.CreateDepartmentAsync(name);
@@ -47,6 +49,12 @@ namespace HospitalManagementSystem.Controllers
         public async Task<ActionResult> RemoveRoom(Guid roomId, Guid departmentId)
         {
             await _departmentService.RemoveRoomAsync(roomId);
+            return RedirectToAction("Details", "Department", new { id = departmentId });
+        }
+        [HttpPost]
+        public async Task<ActionResult> TagRoom(Guid roomId, Guid departmentId, Guid tagId)
+        {
+            await _departmentService.TagRoom(roomId, tagId);
             return RedirectToAction("Details", "Department", new { id = departmentId });
         }
     }

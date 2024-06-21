@@ -11,6 +11,7 @@ namespace HospitalManagementSystem.Application.Repositories
         Task CreateRoomAsync(Room room);
         Task<Department> GetDepartmentAsync(Guid id);
         Task RemoveRoomAsync(Room room);
-        
+        Task UpdateRoomAsync(Room room);
+        Task<IEnumerable<Room>> GetRoomsForTagAsync(Guid tagId);
     }
 }

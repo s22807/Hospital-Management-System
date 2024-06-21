@@ -1,35 +1,207 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\",
+  "WorkspaceRootPath": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Employee.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\departmentdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\visitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\visitshortdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\createfinalvisitdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\visitslotdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\visit\\finalize.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\visit\\finalize.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\dept\\visit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\people\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\dept\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\dept\\department.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\people\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\people\\patient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\services\\visitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\repositories\\ivisitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\visit\\slots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\visit\\slots.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\repository\\patientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\repositories\\idepartmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\visit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\visit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\repositories\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\repository\\tagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\services\\tagservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\tagdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\dept\\visitslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.domain\\models\\dept\\tag.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\employee\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\employeedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.domain\\models\\people\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\roomdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospitalmanagementsystem.application\\models\\patientdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\repositories\\ipatientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\tagcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\tag\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\tag\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\tag\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\tag\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\tag\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\repositories\\itagrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospital management system\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\onedrive\\hospital2\\hospital management system\\controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\departmentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\models\\patientdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.application\\hospitalmanagementsystem.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\migrations\\20231224130729_szosta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\migrations\\20231224131102_siodma.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\migrations\\20231224183029_dziewiata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\onedrive\\area\\pjatk\\mas\\hospital3\\hospitalmanagementsystem.infrastructure\\migrations\\20231224221143_las.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,105 +210,732 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 180,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 182,
+          "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAxwBgAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:50:12.73Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PatientDTO.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\PatientDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAbAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:50:12.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\Details.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Details.cshtml",
-              "RelativeToolTip": "Views\\Patient\\Details.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-16T15:50:12.735Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DepartmentController.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\DepartmentController.cs",
-              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\DepartmentController.cs",
-              "RelativeToolTip": "Controllers\\DepartmentController.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:50:12.737Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Index.cshtml",
-              "RelativeToolTip": "Views\\Patient\\Index.cshtml",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAiwCEAAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-16T15:50:12.739Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "Controllers\\PatientController.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAIwBoAAAA4AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:50:12.742Z"
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PatientService.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA0AAAA3AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-16T15:50:12.744Z",
+              "Title": "dbo.Employee [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Employee.sql",
+              "ToolTip": "dbo.Employee [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-21T17:54:51.352Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CreateFinalVisitDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\CreateFinalVisitDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\CreateFinalVisitDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\CreateFinalVisitDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\CreateFinalVisitDTO.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAqwB0AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.538Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DepartmentDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\DepartmentDetailsDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\DepartmentDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\DepartmentDetailsDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\DepartmentDetailsDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "VisitDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\VisitDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\VisitDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T18:50:03.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.525Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PatientService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAlwDwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.542Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DepartmentService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAgwDsAAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VisitSlotDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitSlotDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\VisitSlotDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitSlotDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\VisitSlotDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.518Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\hospital2\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
-              "RelativeToolTip": "Views\\Patient\\Edit.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-16T15:54:22.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VisitShortDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitShortDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\VisitShortDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\VisitShortDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\VisitShortDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Finalize.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Finalize.cshtml",
+              "RelativeDocumentMoniker": "Views\\Visit\\Finalize.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Finalize.cshtml",
+              "RelativeToolTip": "Views\\Visit\\Finalize.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAADkAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-16T15:50:12.713Z"
+              "WhenOpened": "2024-06-16T15:54:22.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Visit.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Visit.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Visit.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Visit.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Visit.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.523Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Room.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Room.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Room.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Room.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Room.cs",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAgwA0AAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Department.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Department.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Department.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Department.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Department.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.563Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Person.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Person.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.584Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Patient.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Patient.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Patient.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\People\\Patient.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Patient.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAAAUwFoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "VisitController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\VisitController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VisitController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\VisitController.cs",
+              "RelativeToolTip": "Controllers\\VisitController.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAYwBcAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.513Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "VisitService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAkwDgAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.511Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "IVisitRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Slots.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Slots.cshtml",
+              "RelativeDocumentMoniker": "Views\\Visit\\Slots.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Slots.cshtml",
+              "RelativeToolTip": "Views\\Visit\\Slots.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.529Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20231224221143_las.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224221143_las.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224221143_las.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224221143_las.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224221143_las.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAzwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.531Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Create.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Create.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Create.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.533Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\PatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\PatientRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\PatientRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\PatientRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAtwCUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAIwD0AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DepartmentController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\DepartmentController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DepartmentController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\DepartmentController.cs",
+              "RelativeToolTip": "Controllers\\DepartmentController.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAswDAAAABSAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.544Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "IDepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IDepartmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IDepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IDepartmentRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IDepartmentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Visit\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Visit\\Index.cshtml",
+              "RelativeToolTip": "Views\\Visit\\Index.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.548Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IEmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IEmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IEmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IEmployeeRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IEmployeeRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.55Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "TagRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\TagRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\TagRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\TagRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\TagRepository.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCgAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "VisitSlot.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAoAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.554Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "TagDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\TagDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\TagDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\TagDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\TagDTO.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAlwAsAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.556Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "TagService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\TagService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\TagService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\TagService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\TagService.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAawBAAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DepartmentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAmwDMAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Tag.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Tag.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Tag.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Domain\\Models\\Dept\\Tag.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\Tag.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.562Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "EmployeeRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\EmployeeRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBQAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "20231224183029_dziewiata.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224183029_dziewiata.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224183029_dziewiata.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224183029_dziewiata.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224183029_dziewiata.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Department\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Department\\Details.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Department\\Details.cshtml",
+              "RelativeToolTip": "Views\\Department\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Employee\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Employee\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Edit.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAADwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.573Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAqwC4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.576Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "EmployeeService.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
+              "ViewState": "AQIAAD4AAAAAAAAAAADwv0cAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "PatientController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\PatientController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\PatientController.cs",
+              "RelativeToolTip": "Controllers\\PatientController.cs",
+              "ViewState": "AQIAAEsAAAAAAAAAAAAjwF4AAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "EmployeeDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\EmployeeDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\EmployeeDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\EmployeeDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\EmployeeDTO.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAiwCUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.582Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "RoomDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\RoomDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\RoomDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\RoomDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\RoomDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.586Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\UserDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\UserDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\UserDTO.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAD4vyQAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.588Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAMwBcAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IPatientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IPatientRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IPatientRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\IPatientRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IPatientRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAgAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "20231224130729_szosta.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224130729_szosta.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224130729_szosta.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224130729_szosta.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224130729_szosta.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.599Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "20231224131102_siodma.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224131102_siodma.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224131102_siodma.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224131102_siodma.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Migrations\\20231224131102_siodma.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.601Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "TagController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\TagController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TagController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Controllers\\TagController.cs",
+              "RelativeToolTip": "Controllers\\TagController.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAAAgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.603Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tag\\Index.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Index.cshtml",
+              "RelativeToolTip": "Views\\Tag\\Index.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAABsAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.606Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Edit.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Edit.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.608Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tag\\Create.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Create.cshtml",
+              "RelativeToolTip": "Views\\Tag\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.61Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABMAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-16T15:54:22.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ITagRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\ITagRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\ITagRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Repositories\\ITagRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\ITagRepository.cs",
+              "ViewState": "AQIAAAIAAAAAAAAAAAAcwAwAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Tag\\Details.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Tag\\Details.cshtml",
+              "RelativeToolTip": "Views\\Tag\\Details.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.617Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAACUAAAByAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.619Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Patient\\Details.cshtml",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\Hospital Management System\\Views\\Patient\\Details.cshtml",
+              "RelativeToolTip": "Views\\Patient\\Details.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAASwCYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-16T15:54:22.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "PatientDetailsDTO.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA9wBoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-16T15:54:22.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "HospitalManagementSystem.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj",
+              "ToolTip": "C:\\Users\\SzymonGajda\\OneDrive\\Area\\PJATK\\MAS\\hospital3\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-16T15:54:22.626Z"
             }
           ]
         }

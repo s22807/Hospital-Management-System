@@ -1,5 +1,6 @@
 ﻿using HospitalManagementSystem.Application.Models;
 using HospitalManagementSystem.Application.Services;
+using HospitalManagementSystem.Domain.Models.People;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -31,12 +32,12 @@ namespace HospitalManagementSystem.Controllers
         [HttpGet]
         public ActionResult Create(Guid departmentId)
         {
-            return View(new EmployeeCreateDTO { DepartmentId= departmentId });
+            return View(new CreateEmployeeDTO { DepartmentId= departmentId });
         }
 
         // POST: EmployeeController/Create
         [HttpPost]
-        public async Task<ActionResult> Create(EmployeeCreateDTO empDTO)
+        public async Task<ActionResult> Create(CreateEmployeeDTO empDTO)
         {
             await _employeeService.CreateEmployeeAsync(empDTO);
             return RedirectToAction("Details", "Department", new {id = empDTO.DepartmentId});
@@ -56,16 +57,10 @@ namespace HospitalManagementSystem.Controllers
         // POST: EmployeeController/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(Guid id, IFormCollection collection)
+        public async Task<ActionResult> Edit(EmployeeDTO employeeDTO)
         {
-            try
-            {
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
-                return View();
-            }
+            await _employeeService.UpdateEmployee(employeeDTO);
+            return RedirectToAction(nameof(Index));
         }
 
         // POST: EmployeeController/Re/5
@@ -82,6 +77,12 @@ namespace HospitalManagementSystem.Controllers
         {
             await _employeeService.RemoveEmployeeAsync(employeeId);
             return RedirectToAction("Details", "Department", new {id = departmentId});
+        }
+        [HttpPost]
+        public async Task<ActionResult> TagEmployee(Guid employeeId, Guid departmentId, Guid tagId)
+        {
+            await _employeeService.TagEmployee(employeeId, tagId);
+            return RedirectToAction("Details", "Department", new { id = departmentId });
         }
     }
 }
