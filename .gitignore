@@ -1,0 +1,12 @@
+﻿################################################################################
+# Ten plik .gitignore został utworzony automatycznie przez Microsoft(R) Visual Studio.
+################################################################################
+
+/HospitalManagementSystem.Infrastructure/obj/Release/net7.0
+/HospitalManagementSystem.Domain/obj/Release/net7.0
+/HospitalManagementSystem.Application/obj
+/.vs
+/Hospital Management System/.vs/Hospital Management System/FileContentIndex
+/Hospital Management System/obj/Release/net7.0
+/HospitalManagementSystem.Domain/obj/Debug/net7.0
+/HospitalManagementSystem.Infrastructure/obj/Debug/net7.0
