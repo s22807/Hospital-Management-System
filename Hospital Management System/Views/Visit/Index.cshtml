@@ -16,7 +16,6 @@
                     <th>Visit End Date</th>
                     <th>Doctor ID</th>
                     <th>Room Number</th>
-                    <th>Department Name</th>
                     <th>Patient ID</th>
                     <th>Tag Name</th>
                 </tr>
@@ -34,6 +33,23 @@
                         <td>
                             @if (!visit.IsCancelled) // Show button only if visit is not cancelled
                             {
+                                <form method="post" asp-controller="Visit" asp-action="Cancel">
+                                    <input type="hidden" name="visitId" value="@visit.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Cancel</button>
+                                </form>
+                            }
+                            else
+                            {
+                                <span class="text-muted">Cancelled</span>
+                            }
+                        </td>
+                        <td>
+                            @if (!visit.IsCancelled) // Show button only if visit is not cancelled
+                            {
+                                <form method="post" asp-controller="Visit" asp-action="Cancel">
+                                    <input type="hidden" name="visitId" value="@visit.Id" />
+                                    <button type="submit" class="btn btn-danger btn-sm">Cancel</button>
+                                </form>
                                 <form method="post" asp-controller="Visit" asp-action="Cancel">
                                     <input type="hidden" name="visitId" value="@visit.Id" />
                                     <button type="submit" class="btn btn-danger btn-sm">Cancel</button>

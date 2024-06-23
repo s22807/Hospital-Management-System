@@ -47,6 +47,16 @@ namespace HospitalManagementSystem.Controllers
 
             return Redirect($"/Patient/Details/{chosenVisitSlotDTO.PatientId}");
         }
+        public async Task<IActionResult> Cancel(Guid visitId)
+        {
+            await _visitService.CancelVisit(visitId);
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Done(Guid visitId)
+        {
+            await _visitService.registerDoneVisit(visitId);
+            return RedirectToAction("Index");
+        }
         //[HttpPost]
         //public async Task<IActionResult> SearchPatients(VisitSlotDTO chosenVisitSlotDTO, string? firstname, string? lastname, string? pesel)
         //{

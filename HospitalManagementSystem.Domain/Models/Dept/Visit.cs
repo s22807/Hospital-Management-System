@@ -16,6 +16,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public Guid? BillId { get; private set; }
         public Guid? TagId { get; private set; }
         public bool IsCancelled { get; set; } = false;
+        public string Status { get; set; } = "Created";
 
         public virtual Employee Doctor { get; private set; }
         public virtual Patient Patient { get; private set; }
@@ -24,7 +25,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public virtual Tag? Tag { get; private set; }
         public static double VisitCost { get; private set; } = 1000;
 
-        private Visit(Guid patientId, Guid doctorId, Guid roomId, Guid? billId, DateTime visitStartDate, Guid? tagId, bool? isCancelled)
+        private Visit(Guid patientId, Guid doctorId, Guid roomId, Guid? billId, DateTime visitStartDate, Guid? tagId, bool? isCancelled, string status)
         {
             Id = Guid.NewGuid();
             SetVisitDate(visitStartDate);
@@ -35,6 +36,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
             BillId = billId;
             TagId = tagId;
             IsCancelled = isCancelled ?? false;
+            Status = status;
         }
         private Visit(Patient patient, Employee doctor, Room? room, Bill bill, DateTime visitStartDate, Tag? tag)
         {
@@ -87,7 +89,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         }
         public void SetDoctor(Employee value)
         {
-            if (value != null && value.Role == Employee.EmpKind.Doctor)
+            if (value != null && value.Role == IEmpRole.Role.Doctor)
             {
                 Doctor = value;
             }
@@ -132,6 +134,14 @@ namespace HospitalManagementSystem.Domain.Models.Department
         private void SetTag(Tag? tag)
         {
             Tag = tag;
+        }
+        public void CancelVisit()
+        {
+            if (IsCancelled)
+            {
+                throw new ArgumentException("Visit is already cancelled.");
+            }
+            IsCancelled = true;
         }
         
     }

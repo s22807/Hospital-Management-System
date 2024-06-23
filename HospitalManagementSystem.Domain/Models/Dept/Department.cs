@@ -8,7 +8,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public string Name { get; set; }
         public virtual ICollection<Employee> Employees { get; set; } = null!; 
         public virtual ICollection<Room> Rooms { get; set; } = null!;
-        
+        public string? Announcements { get; set; }
         public Department(string name)
         {
             Name = name;

@@ -27,9 +27,6 @@ namespace HospitalManagementSystem.Domain.Models.Payments
         public virtual Visit Visit { get; set; }
         public virtual ICollection<Payment> Payments { get; set; }
 
-        public static Bill Create(Patient patient, double visitCost)
-        {
-            throw new NotImplementedException();
-        }
+
     }
 }

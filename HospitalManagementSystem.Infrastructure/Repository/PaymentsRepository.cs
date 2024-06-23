@@ -18,14 +18,21 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         }
         public async Task PayForBillAsync(Guid billId, double value)
         {
-            var bill = await _context.Bills.Include(e=>e.Payments).Include(e=>e.Patient).FirstOrDefaultAsync(e => e.BillId == billId);
-            if (bill != null && !bill.IsPaid)
+            var bill = await _context.Bills.Include(e=>e.Payments).Include(e=>e.Patient).Include(e=>e.Visit).FirstOrDefaultAsync(e => e.BillId == billId);
+            if (bill != null && !bill.IsPaid && bill.Visit.Status != "Cancelled")
             {
                 var payment = new Payment(bill.Patient, bill, value);
                 _context.Payments.Add(payment);
                 
                 bill.PaidAmount += value;
-                bill.IsPaid = bill.PaidAmount >= bill.Amount;
+                if (bill.PaidAmount >= bill.Amount)
+                {
+                    bill.IsPaid = true;
+                    var v = _context.Visits.Where(e => e.Id == bill.VisitId).First();
+                    v.Status = v.Status == "Completed" ? "Closed" : "Paid";
+                }
+                
+                 
                 _context.Bills.Update(bill);
                 await _context.SaveChangesAsync();
             }

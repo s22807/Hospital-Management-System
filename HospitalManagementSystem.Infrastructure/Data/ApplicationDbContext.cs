@@ -1,5 +1,4 @@
 ﻿using HospitalManagementSystem.Domain.Models.Department;
-using HospitalManagementSystem.Domain.Models.Department;
 using HospitalManagementSystem.Domain.Models.Payments;
 using HospitalManagementSystem.Domain.Models.People;
 using Microsoft.EntityFrameworkCore;
@@ -21,7 +20,6 @@ namespace HospitalManagementSystem.Data
 
         public DbSet<Employee> Employees { get; set; }
         public DbSet<Payment> Payments { get; set; }
-        public DbSet<Room.Key> RoomKeys { get; set; }
         public DbSet<Tag> Tags { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -115,19 +113,13 @@ namespace HospitalManagementSystem.Data
                 e.Property(e => e.CreatedAt).IsRequired();
                 e.Property(e => e.VisitStartDate).IsRequired();
                 e.Property(e => e.PatientId).IsRequired();
+                e.Property(e => e.Status).IsRequired();
                 e.HasOne(e => e.Patient).WithMany(e => e.Visits).HasForeignKey(e => e.PatientId).OnDelete(DeleteBehavior.Cascade);
                 e.HasOne(e => e.Room).WithMany(e => e.Visits).HasForeignKey(e => e.RoomId).OnDelete(DeleteBehavior.SetNull);
                 e.HasOne(e => e.Doctor).WithMany(e => e.Visits).HasForeignKey(e => e.DoctorId).OnDelete(DeleteBehavior.SetNull);
                 e.HasOne(e => e.Tag).WithMany().HasForeignKey(e => e.TagId).OnDelete(DeleteBehavior.SetNull);
                 e.HasOne(e => e.Bill).WithOne(e => e.Visit).HasForeignKey<Visit>(e => e.BillId).OnDelete(DeleteBehavior.Cascade);
 
-            });
-            modelBuilder.Entity<Room.Key>(e =>
-            {
-                e.ToTable("RoomKey");
-                e.HasKey(e => e.Id);
-                e.Property(e => e.RoomId).IsRequired();
-                e.HasOne(e => e.Room).WithMany(e => e.Keys).HasForeignKey(e => e.RoomId).OnDelete(DeleteBehavior.Cascade);
             });
 
             modelBuilder.Entity<Tag>(e =>

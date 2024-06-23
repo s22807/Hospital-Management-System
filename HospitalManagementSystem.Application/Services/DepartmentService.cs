@@ -1,6 +1,7 @@
 ﻿using HospitalManagementSystem.Application.Models;
 using HospitalManagementSystem.Application.Repositories;
 using HospitalManagementSystem.Domain.Models.Department;
+using HospitalManagementSystem.Domain.Models.People;
 using System.Linq;
 
 namespace HospitalManagementSystem.Application.Services
@@ -16,16 +17,19 @@ namespace HospitalManagementSystem.Application.Services
     }
     internal class DepartmentService : IDepartmentService
     {
+        private readonly IUserService _userService;
         private readonly IDepartmentRepository _departmentRepository;
         private readonly ITagRepository _tagRepository;
-        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository)
+        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository, IUserService userService)
         {
             _departmentRepository = departmentRepository;
             _tagRepository = tagRepository;
+            _userService = userService;
         }
 
         public async Task CreateDepartmentAsync(string name)
         {
+            
             var department = new Department(name);
             await _departmentRepository.CreateDepartmentAsync(department);
         }

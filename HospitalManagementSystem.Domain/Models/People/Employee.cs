@@ -1,35 +1,23 @@
 ﻿using HospitalManagementSystem.Domain.Models.Department;
-using HospitalManagementSystem.Domain.Models.Department;
-using System.Net.NetworkInformation;
 
 namespace HospitalManagementSystem.Domain.Models.People
 {
 
-    public class Employee : Person, IUser
+    public class Employee : Person, IUser, Admin, Doctor, Receptionist, Trainee
     {
-        public enum EmpKind
-        {
-            Trainee = 0,
-            Receptionist = 1,
-            Doctor = 2,
-            Admin = 3
-        }
-        public static bool CheckRole(string roleToCheck)
-        {
-            return Enum.TryParse(roleToCheck, out EmpKind result);
-        }
+
 
         public Guid Id { get; private set; }
         public int Salary { get; private set; }
         public int VacationDays { get; private set; }
         public DateTime FireDate { get; private set; }
-        public EmpKind Role { get; private set; }
+        public IEmpRole.Role Role { get; private set; }
         string IUser.Role => Role.ToString();
         public Guid? DepartmentId { get; private set; }
         public Guid? TagId { get; private set; }
         public virtual Department.Department? Department { get; private set; }
         public virtual ICollection<Visit> Visits { get; private set; } 
-        public virtual ICollection<Room.Key> RentedKeys { get; private set; } = new List<Room.Key>();
+
         public virtual Tag? Tag { get; private set; }
 
         public DateTime CreatedAt { get; private set; }
@@ -54,7 +42,7 @@ namespace HospitalManagementSystem.Domain.Models.People
         public static int DefaultVaccationDays = 2;
         //public static DateTime = DateTime.Now.AddYears(2);
 
-        public Employee(int salary, DateTime fireDate, Department.Department? department, EmpKind role
+        public Employee(int salary, DateTime fireDate, Department.Department? department, IEmpRole.Role role
             , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
             : base(firstName, lastName, pesel, birthDate, sex)
         {
@@ -67,7 +55,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             SetBirthDate(birthDate);
             SetVisitTime(visitTime);
         }
-        public Employee(int salary, DateTime fireDate, EmpKind role
+        public Employee(int salary, DateTime fireDate, IEmpRole.Role role
             , string firstName, string lastName, string pesel, DateTime birthDate, bool sex, int? visitTime)
             : base(firstName, lastName, pesel, birthDate, sex)
         {
@@ -151,7 +139,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             }
         }
 
-        public void SetRole(EmpKind value)
+        public void SetRole(IEmpRole.Role value)
         {
             if (this.FireDate < DateTime.Now)
             {
@@ -173,26 +161,7 @@ namespace HospitalManagementSystem.Domain.Models.People
                 }
             }
         }
-        public void AddKey(Room.Key value)
-        {
-            if (!this.RentedKeys.Contains(value))
-            {
-                if (this.RentedKeys.Count >= 3)
-                {
-                    throw new ArgumentException("Employee cannot have more than 3 keys.");
-                }
-                this.RentedKeys.Add(value);
-                value.Employee = this;
-            }
-        }
-        public void RemoveKey(Room.Key value)
-        {
-            if (this.RentedKeys.Contains(value))
-            {
-                this.RentedKeys.Remove(value);
-                value.Employee = null;
-            }
-        }
+
 
         public override void SetBirthDate(DateTime value)
         {
@@ -212,7 +181,7 @@ namespace HospitalManagementSystem.Domain.Models.People
         }
         public void SetVisitTime(int? time)
         {
-            if(this.Role != EmpKind.Doctor)
+            if(this.Role != IEmpRole.Role.Doctor)
             {
                 return;
             }
@@ -232,11 +201,36 @@ namespace HospitalManagementSystem.Domain.Models.People
         public void AddHoursWorked(int hours)
         {
             HoursWorked += hours;
-            if (HoursWorked >= TrainingTime && Role == EmpKind.Trainee)
+            if (HoursWorked >= TrainingTime && Role == IEmpRole.Role.Trainee)
             {
-                SetRole(EmpKind.Receptionist);
+                SetRole(IEmpRole.Role.Receptionist);
                 SetSalary((int)(Salary * 1.2));
             }
+        }
+
+        public bool hasRole(string role)
+        {
+            var r = Enum.Parse(typeof(IEmpRole.Role), role);
+            return Role == (IEmpRole.Role)r;
+        }
+
+        public void setRole(string role)
+        {
+            if (hasRole(role))
+            {
+                return;
+            }
+            SetRole((IEmpRole.Role)Enum.Parse(typeof(IEmpRole.Role), role));
+        }
+
+        public void setAnnouncement(string announcement)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void finishTraining()
+        {
+            throw new NotImplementedException();
         }
 
         //public DateTime backAtWorkDate { get; set; }

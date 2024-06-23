@@ -13,6 +13,8 @@ namespace HospitalManagementSystem.Application.Services
         Task<Guid> CreateVisit(VisitSlotDTO createFinalVisitDTO);
         Task<IEnumerable<VisitShortDTO>> GetCurrentVisitsAsync();
         Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO, Guid patientId);
+        Task CancelVisit(Guid visitId);
+        Task registerDoneVisit(Guid visitId);
     }
 
     internal class VisitService : IVisitService
@@ -36,6 +38,21 @@ namespace HospitalManagementSystem.Application.Services
             _tagRepository = tagRepository;
             _paymentsRepository = paymentsRepository;
             visitCost = configuration.GetValue<double>("VisitCost");
+        }
+
+        public async Task CancelVisit(Guid visitId)
+        {
+            var visit = await _visitRepository.GetAsync(visitId);
+            visit.IsCancelled = true;
+            await _visitRepository.UpdateAsync(visit);
+            return;
+        }
+        public async Task registerDoneVisit(Guid visitId)
+        {
+            var visit = await _visitRepository.GetAsync(visitId);
+            visit.Status = visit.Status == "Paid" ? "Closed" : "Completed"; 
+            await _visitRepository.UpdateAsync(visit);
+            return;
         }
 
         public async Task<Guid> CreateVisit(VisitSlotDTO createFinalVisitDTO)
