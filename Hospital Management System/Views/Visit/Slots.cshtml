@@ -32,6 +32,7 @@
                     <td>@slot.TagName</td>
                     <td>
                         <form asp-action="Finalize" method="post">
+                            <input type="hidden" name="chosenVisitSlotDTO.PatientId" value="@slot.PatientId" />
                             <input type="hidden" name="chosenVisitSlotDTO.DoctorId" value="@slot.DoctorId" />
                             <input type="hidden" name="chosenVisitSlotDTO.RoomId" value="@slot.RoomId" />
                             <input type="hidden" name="chosenVisitSlotDTO.RoomNumber" value="@slot.RoomNumber" />

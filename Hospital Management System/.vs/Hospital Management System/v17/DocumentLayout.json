@@ -3,89 +3,29 @@
   "WorkspaceRootPath": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\departmentservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.infrastructure\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.infrastructure\\repository\\departmentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.infrastructure\\repository\\visitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.domain\\models\\payments\\bill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\repositories\\ipaymentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.domain\\models\\people\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\department\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\patientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\patientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\visitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:controllers\\visitcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\visit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\visit\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\patient\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\visitservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.infrastructure\\repository\\visitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\repositories\\ivisitrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2D751380-08C5-46D4-A08E-67B072A348A2}|..\\HospitalManagementSystem.Infrastructure\\HospitalManagementSystem.Infrastructure.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.infrastructure\\repository\\paymentsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Visit.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\services\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospital management system\\views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{099A2E43-A81B-497C-8D39-F22F075C20C6}|Hospital Management System.csproj|solutionrelative:views\\employee\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Patient.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{011AAE6C-CFED-4F7A-9E14-422DD635E7E7}|..\\HospitalManagementSystem.Application\\HospitalManagementSystem.Application.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.application\\models\\patientdetailsdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Tag.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7F1B8754-7A44-490F-AC00-C667E61279BB}|..\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj|c:\\users\\szymongajda\\source\\repos\\s22807\\hospital-management-system\\hospitalmanagementsystem.domain\\models\\dept\\visitslot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Bill.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -95,322 +35,101 @@
       "DocumentGroups": [
         {
           "DockedWidth": 180,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Visit\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Visit\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Visit\\Index.cshtml",
-              "RelativeToolTip": "Views\\Visit\\Index.cshtml",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAYwBgAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T14:08:02.927Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "DepartmentService.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\DepartmentService.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAnwCoAAABQAAAA",
+              "Title": "Extensions.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Extensions.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Extensions.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Extensions.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Extensions.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABwAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T15:28:38.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DepartmentRepository.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\DepartmentRepository.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAEwB4AAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T15:26:53.724Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Bill.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\Payments\\Bill.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Payments\\Bill.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\Payments\\Bill.cs*",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Payments\\Bill.cs*",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABIAAAAiAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T15:24:36.552Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PatientService.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\PatientService.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAGEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T10:35:46.453Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "PatientController.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\PatientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PatientController.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\PatientController.cs",
-              "RelativeToolTip": "Controllers\\PatientController.cs",
-              "ViewState": "AQIAAHUAAAAAAAAAAAAewIgAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:57:58.865Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserService.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\UserService.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\UserService.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\UserService.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\UserService.cs",
-              "ViewState": "AQIAAD4AAAAAAAAAAAAowBkAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T13:16:07.985Z",
+              "WhenOpened": "2024-06-23T18:09:08.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Patient\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Patient\\Index.cshtml",
-              "RelativeToolTip": "Views\\Patient\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAABJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T14:37:02.12Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "EmployeeController.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\EmployeeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\EmployeeController.cs",
-              "RelativeToolTip": "Controllers\\EmployeeController.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAuwFcAAAA4AAAA",
+              "Title": "PaymentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\PaymentsRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\PaymentsRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\PaymentsRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\PaymentsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T13:11:59.081Z",
+              "WhenOpened": "2024-06-23T18:00:42.62Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IPaymentsRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Repositories\\IPaymentsRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IPaymentsRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Repositories\\IPaymentsRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IPaymentsRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-23T18:00:30.343Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Department\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Department\\Details.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Department\\Details.cshtml*",
-              "RelativeToolTip": "Views\\Department\\Details.cshtml*",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAAA5AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T11:07:44.164Z",
-              "EditorCaption": ""
+              "DocumentIndex": 6,
+              "Title": "dbo.Visit [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Visit.sql",
+              "ToolTip": "dbo.Visit [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-23T17:53:07.235Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "dbo.Bill [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Bill.sql",
+              "ToolTip": "dbo.Bill [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-06-23T17:52:57.917Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Employee.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\People\\Employee.cs",
-              "ViewState": "AQIAAM4AAAAAAAAAAAAowNwAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T13:55:00.651Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VisitController.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\VisitController.cs",
-              "RelativeDocumentMoniker": "Controllers\\VisitController.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\VisitController.cs",
-              "RelativeToolTip": "Controllers\\VisitController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:41:28.127Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IVisitRepository.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Repositories\\IVisitRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAswAkAAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:09:05.921Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "VisitRepository.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
-              "ViewState": "AQIAAFcAAAAAAAAAAAAqwGQAAAAgAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T14:09:15.209Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "VisitService.cs",
               "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
               "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
               "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
               "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\VisitService.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAQwEYAAAAnAAAA",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABwAAABQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:28:19.703Z",
+              "WhenOpened": "2024-06-23T17:50:30.239Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAVAAAA",
+              "DocumentIndex": 1,
+              "Title": "VisitRepository.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
+              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
+              "RelativeToolTip": "..\\HospitalManagementSystem.Infrastructure\\Repository\\VisitRepository.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAqwBIAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T13:20:45.574Z",
+              "WhenOpened": "2024-06-23T17:50:30.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Employee\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Employee\\Create.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Employee\\Create.cshtml",
-              "RelativeToolTip": "Views\\Employee\\Create.cshtml",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAACkAAAA0AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T13:40:02.435Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Patient\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Patient\\Details.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Patient\\Details.cshtml",
-              "RelativeToolTip": "Views\\Patient\\Details.cshtml",
-              "ViewState": "AQIAACkAAAAAAAAAAAAAAEgAAAAPAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T11:07:35.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "dbo.Visit [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Visit.sql",
-              "ToolTip": "dbo.Visit [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-23T14:08:54.845Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "EmployeeService.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Services\\EmployeeService.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAMwEwAAAA5AAAA",
+              "DocumentIndex": 4,
+              "Title": "VisitController.cs",
+              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\VisitController.cs",
+              "RelativeDocumentMoniker": "Controllers\\VisitController.cs",
+              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Controllers\\VisitController.cs",
+              "RelativeToolTip": "Controllers\\VisitController.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAMwCwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-23T13:52:25.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Employee\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Employee\\Index.cshtml",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\Hospital Management System\\Views\\Employee\\Index.cshtml",
-              "RelativeToolTip": "Views\\Employee\\Index.cshtml",
-              "ViewState": "AQIAABIAAAAAAAAAAAAYwB0AAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-23T12:55:32.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "dbo.Patient [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Patient.sql",
-              "ToolTip": "dbo.Patient [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-23T12:06:03.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "VisitSlot.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Domain\\Models\\Dept\\VisitSlot.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:30:39.263Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "PatientDetailsDTO.cs",
-              "DocumentMoniker": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
-              "RelativeDocumentMoniker": "..\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
-              "ToolTip": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
-              "RelativeToolTip": "..\\HospitalManagementSystem.Application\\Models\\PatientDetailsDTO.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAA0wA4AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T14:51:30.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "dbo.Tag [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/Hospital_Management_System/True/SqlTable/dbo.Tag.sql",
-              "ToolTip": "dbo.Tag [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2024-06-23T12:00:46.306Z",
+              "WhenOpened": "2024-06-23T17:09:42.707Z",
               "EditorCaption": ""
             }
           ]

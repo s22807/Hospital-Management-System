@@ -11,12 +11,14 @@ namespace HospitalManagementSystem.Application.Models
     {
         public VisitDTO(Visit v)
         {
+            Id = v.Id;
+            VisitStartDate = v.VisitStartDate;
+            RoomNumber = v.Room.Number;
+            PatientId = v.PatientId;
         }
 
-        public int Id { get; set; }
-        public string DeptName { get; set; }
+        public Guid Id { get; set; }
         public DateTime VisitStartDate { get; set; }
-        public DateTime VisitEndDate { get; set; }
         public int RoomNumber { get; set; }
         public Guid PatientId { get; set; }
     }

@@ -1,4 +1,5 @@
 ﻿using HospitalManagementSystem.Domain.Models.People;
+using HospitalManagementSystem.Domain.Models.Department;
 
 namespace HospitalManagementSystem.Application.Models
 {
@@ -16,7 +17,7 @@ namespace HospitalManagementSystem.Application.Models
         public string SelectedTag { get; set; }
         public bool Insured { get; set; }
 
-        public PatientDetailsDTO(Patient patient)
+        public PatientDetailsDTO(Patient patient, IEnumerable<Visit> visits)
         {
             Id = patient.Id;
             FirstName = patient.FirstName;
@@ -25,7 +26,7 @@ namespace HospitalManagementSystem.Application.Models
             Birthdate = patient.BirthDate;
             Sex = patient.Sex;
             CreatedAt = patient.CreatedAt;
-            Visits = patient.Visits.Select(v => new VisitDTO(v)).ToList();
+            Visits = visits.Select(v => new VisitDTO(v)).ToList();
             DeletedAt = patient.DeletedAt;
             LoggedAt = patient.LoggedAt;
             MothersName = patient.MothersName;

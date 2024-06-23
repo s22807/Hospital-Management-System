@@ -16,7 +16,7 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         public async Task CreateVisitAsync(Visit visit)
         {
             await _context.Visits.AddAsync(visit);
-            await _context.SaveChangesAsync(); 
+            await _context.SaveChangesAsync();
         }
 
         public async Task<Visit> GetAsync(Guid id)
@@ -31,6 +31,15 @@ namespace HospitalManagementSystem.Infrastructure.Repository
             }
 
             return visit;
+        }
+
+        public async Task<IEnumerable<Visit>> GetPatientsVisitsAsync(Guid patientId)
+        {
+            return await _context.Visits
+                .Include(x => x.Doctor)
+                .Include(x => x.Room)
+                .Where(x => x.PatientId == patientId)
+                .ToListAsync();
         }
 
         public async Task<IEnumerable<VisitSlot>> GetFreeSlots(Tag tag)
@@ -99,8 +108,7 @@ namespace HospitalManagementSystem.Infrastructure.Repository
             .Include(e => e.Doctor)
             .Include(e => e.Room)
             .Include(e => e.Tag)
-            .Include(e => e.Room.Department).
-            ToListAsync();
+            .ToListAsync();
 
 
         public async Task UpdateAsync(Visit visit)

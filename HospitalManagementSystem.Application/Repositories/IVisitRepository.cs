@@ -9,5 +9,6 @@ namespace HospitalManagementSystem.Application.Repositories
         Task<IEnumerable<VisitSlot>> GetFreeSlots(Tag tag);
         Task<IEnumerable<Visit>> GetVisitSince(DateTime now);
         Task UpdateAsync(Visit visit);
+        Task<IEnumerable<Visit>> GetPatientsVisitsAsync(Guid patientId);
     }
 }

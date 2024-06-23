@@ -33,7 +33,6 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         public async Task<Patient?> GetPatientAsync(Guid patientId)
             => await _context.Patients.FindAsync(patientId);
 
-
         public async Task<IEnumerable<Patient>> GetPatientsAsync()
             => await _context.Patients.ToListAsync();
 

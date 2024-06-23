@@ -8,8 +8,9 @@ namespace HospitalManagementSystem.Domain.Models.People
     {
         public Guid Id { get; private set; }
         public DateTime CreatedAt { get; private set; }
-        public virtual IEnumerable<Visit> Visits { get; set; } = Enumerable.Empty<Visit>();
+        public virtual ICollection<Visit> Visits { get; set; } = new List<Visit>();
         public virtual IEnumerable<Payment> Payments { get; set; } = Enumerable.Empty<Payment>();
+        public virtual IEnumerable<Bill> Bills { get; set; } = Enumerable.Empty<Bill>();
         public DateTime? DeletedAt { get; private set; }
         public DateTime? LoggedAt { get; private set; }
         public string? Email;

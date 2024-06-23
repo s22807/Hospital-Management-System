@@ -15,6 +15,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public Guid RoomId { get; private set; }
         public Guid? BillId { get; private set; }
         public Guid? TagId { get; private set; }
+        public bool IsCancelled { get; set; } = false;
 
         public virtual Employee Doctor { get; private set; }
         public virtual Patient Patient { get; private set; }
@@ -23,8 +24,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
         public virtual Tag? Tag { get; private set; }
         public static double VisitCost { get; private set; } = 1000;
 
-
-        private Visit(Guid patientId, Guid doctorId, Guid roomId, Guid? billId, DateTime visitStartDate, Guid? tagId)
+        private Visit(Guid patientId, Guid doctorId, Guid roomId, Guid? billId, DateTime visitStartDate, Guid? tagId, bool? isCancelled)
         {
             Id = Guid.NewGuid();
             SetVisitDate(visitStartDate);
@@ -34,6 +34,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
             RoomId = roomId;
             BillId = billId;
             TagId = tagId;
+            IsCancelled = isCancelled ?? false;
         }
         private Visit(Patient patient, Employee doctor, Room? room, Bill bill, DateTime visitStartDate, Tag? tag)
         {
@@ -54,7 +55,7 @@ namespace HospitalManagementSystem.Domain.Models.Department
             PatientId = patientId;
             DoctorId = doctorId;
             RoomId= roomId;
-            //var bill = new Bill(Id, VisitCost);
+            Bill = new Bill(Id, patientId, VisitCost, false);
             TagId = tagId;
 
         }

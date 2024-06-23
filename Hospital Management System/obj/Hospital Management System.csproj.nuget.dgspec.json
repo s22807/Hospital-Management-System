@@ -220,7 +220,7 @@
         "projectName": "HospitalManagementSystem.Domain",
         "projectPath": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\HospitalManagementSystem.Domain.csproj",
         "packagesPath": "C:\\Users\\SzymonGajda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SzymonGajda\\Source\\Repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\obj\\",
+        "outputPath": "C:\\Users\\SzymonGajda\\source\\repos\\s22807\\Hospital-Management-System\\HospitalManagementSystem.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

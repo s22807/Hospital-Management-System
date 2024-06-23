@@ -9,13 +9,13 @@ namespace HospitalManagementSystem.Application.Models
 {
     public class VisitShortDTO
     {
+        public Guid Id { get; set; }
         public DateTime? VisitStartDate { get; set; }
         public DateTime? VisitEndDate { get; set; }
         public Guid? DoctorId { get; set; }
         public int? RoomNumber { get; set; }
-        public string? DepartmentName { get; set; }
         public Guid? PatientId { get; set; }
         public string? TagName { get; set; }
-
+        public bool IsCancelled { get; set; }
     }
 }

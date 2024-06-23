@@ -97,7 +97,7 @@ namespace HospitalManagementSystem.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult VisitWithSelectedTag(PatientDetailsDTO patient)
         {
-            return RedirectToAction("Slots", "Visit", new { tag = patient.SelectedTag });
+            return RedirectToAction("Slots", "Visit", new { patientId = patient.Id ,selectedTag = patient.SelectedTag });
         }
 
         [HttpPost]

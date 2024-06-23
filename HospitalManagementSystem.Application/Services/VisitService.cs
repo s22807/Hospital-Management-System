@@ -12,7 +12,7 @@ namespace HospitalManagementSystem.Application.Services
     {
         Task<Guid> CreateVisit(VisitSlotDTO createFinalVisitDTO);
         Task<IEnumerable<VisitShortDTO>> GetCurrentVisitsAsync();
-        Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO);
+        Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO, Guid patientId);
     }
 
     internal class VisitService : IVisitService
@@ -22,20 +22,26 @@ namespace HospitalManagementSystem.Application.Services
         private readonly IPatientRepository _patientRepository;
         private readonly IDepartmentRepository _departmentRepository;
         private readonly ITagRepository _tagRepository;
+        private readonly IPaymentsRepository _paymentsRepository;
         private readonly double visitCost;
-        public VisitService(IVisitRepository visitRepository, IEmployeeRepository employeeRepository, IPatientRepository patientRepository, IDepartmentRepository departmentRepository, ITagRepository tagRepository, IConfiguration configuration)
+        public VisitService(IVisitRepository visitRepository, IEmployeeRepository employeeRepository, 
+            IPatientRepository patientRepository, IDepartmentRepository departmentRepository, 
+            ITagRepository tagRepository, IPaymentsRepository paymentsRepository,
+            IConfiguration configuration)
         {
             _visitRepository = visitRepository;
             _employeeRepository = employeeRepository;
             _patientRepository = patientRepository;
             _departmentRepository = departmentRepository;
             _tagRepository = tagRepository;
+            _paymentsRepository = paymentsRepository;
             visitCost = configuration.GetValue<double>("VisitCost");
         }
 
         public async Task<Guid> CreateVisit(VisitSlotDTO createFinalVisitDTO)
         {
             var visit = new Visit(createFinalVisitDTO.PatientId,createFinalVisitDTO.DoctorId, createFinalVisitDTO.RoomId,createFinalVisitDTO.VisitStartDate,createFinalVisitDTO.TagId);
+            await _paymentsRepository.CreateBill(visit.Bill);
             await _visitRepository.CreateVisitAsync(visit);
             return visit.Id;
         }
@@ -55,14 +61,15 @@ namespace HospitalManagementSystem.Application.Services
                     RoomNumber = visit.Room.Number,
                     PatientId = visit.PatientId,
                     TagName = visit.Tag.Name,
-                    DepartmentName = visit.Room.Department.Name
+                    IsCancelled = visit.IsCancelled,
+                    Id = visit.Id
                 });
 
     }
             return visitShorts;
         }
         
-        public async Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO)
+        public async Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO, Guid patientId)
         {
             if (tagDTO.Id == null) throw new Exception("No tagId provided");
             var tag = await _tagRepository.GetTagAsync((Guid)tagDTO.Id);
@@ -78,7 +85,8 @@ namespace HospitalManagementSystem.Application.Services
                     RoomId = slot.Room.Id,
                     TagId = slot.Tag.Id,
                     RoomNumber=slot.Room.Number,
-                    TagName=slot.Tag.Name
+                    TagName=slot.Tag.Name,
+                    PatientId=patientId
                 });
             }
             return slotsDTO;

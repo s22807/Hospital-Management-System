@@ -23,10 +23,13 @@ namespace HospitalManagementSystem.Application.Services
     internal class PatientService : IPatientService
     {
         private readonly IPatientRepository _patientRepository;
+        private readonly IVisitRepository _visitRepository;
         private TagService _tagService;
 
-        public PatientService(IPatientRepository patientRepository)
-            => _patientRepository = patientRepository;
+        public PatientService(IPatientRepository patientRepository, IVisitRepository visitRepository){
+            _patientRepository = patientRepository;
+            _visitRepository = visitRepository;
+        }
 
         public async Task CreatePatientAsync(CreatePatientDTO patientDTO)
         {
@@ -52,10 +55,12 @@ namespace HospitalManagementSystem.Application.Services
         public async Task<PatientDetailsDTO?> GetPatientDetailsAsync(Guid patientId)
         {
             var p = await _patientRepository.GetPatientAsync(patientId);
+            var v = await _visitRepository.GetPatientsVisitsAsync(patientId);
             if (p == null)
                 return null;
-            var patient = new PatientDetailsDTO(p);
-            return new PatientDetailsDTO(p);
+            
+            var patient = new PatientDetailsDTO(p, v);
+            return patient;
         }
 
         public async Task<IEnumerable<PatientDTO>> GetPatientsAsync()

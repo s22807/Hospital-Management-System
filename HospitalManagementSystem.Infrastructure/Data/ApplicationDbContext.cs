@@ -86,7 +86,8 @@ namespace HospitalManagementSystem.Data
                 e.ToTable("Bill");
                 e.HasKey(e => e.BillId);
                 e.Property(e => e.CreatedAt).IsRequired();
-                e.Property(e => e.Cost).IsRequired();
+                e.Property(e => e.Amount).IsRequired();
+                e.HasOne(e => e.Patient).WithMany(e => e.Bills).HasForeignKey(e => e.PatientId).OnDelete(DeleteBehavior.SetNull);
                 e.HasOne(e => e.Visit).WithOne(e => e.Bill).HasForeignKey<Bill>(e => e.VisitId).OnDelete(DeleteBehavior.Cascade);
             });
             modelBuilder.Entity<Patient>(e =>

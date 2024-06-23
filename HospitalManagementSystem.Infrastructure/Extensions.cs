@@ -23,7 +23,8 @@ namespace HospitalManagementSystem.Infrastructure
                 .AddScoped<IDepartmentRepository, DepartmentRepository>()
                 .AddScoped<IVisitRepository, VisitRepository>()
                 .AddScoped<ITagRepository, TagRepository>()
-                .AddScoped<IUserRepository, UserRepository>();
+                .AddScoped<IUserRepository, UserRepository>()
+                .AddScoped<IPaymentsRepository, PaymentsRepository>();
         }
 	}
 }

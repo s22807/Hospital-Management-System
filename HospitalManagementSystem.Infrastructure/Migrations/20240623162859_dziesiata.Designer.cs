@@ -4,6 +4,7 @@ using HospitalManagementSystem.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HospitalManagementSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240623162859_dziesiata")]
+    partial class dziesiata
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -40,12 +43,12 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6bdea6a1-57c8-4a47-b074-04fe165d74de"),
+                            Id = new Guid("75f1f8b7-21c1-4c1f-bf74-1d78f8ce39b0"),
                             Name = "Childcare"
                         },
                         new
                         {
-                            Id = new Guid("10461b59-2e75-4487-9376-d839ffde35ab"),
+                            Id = new Guid("5966ce58-79e6-431c-a2ef-0b7b621af0a2"),
                             Name = "Dentistry"
                         });
                 });
@@ -134,7 +137,7 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<Guid>("DoctorId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<bool>("IsCancelled")
+                    b.Property<bool>("IsCanceled")
                         .HasColumnType("bit");
 
                     b.Property<Guid>("PatientId")
@@ -172,19 +175,13 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
-                    b.Property<double>("Amount")
+                    b.Property<double>("Cost")
                         .HasColumnType("float");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<bool>("IsPaid")
-                        .HasColumnType("bit");
-
-                    b.Property<double>("PaidAmount")
-                        .HasColumnType("float");
-
-                    b.Property<Guid?>("PatientId")
+                    b.Property<Guid>("PatientId")
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<Guid>("VisitId")
@@ -314,9 +311,6 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<DateTime?>("DeletedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("FathersName")
                         .HasColumnType("nvarchar(max)");
 
@@ -337,18 +331,12 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.Property<string>("MothersName")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("Password")
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Pesel")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Sex")
                         .HasColumnType("bit");
-
-                    b.Property<string>("Username")
-                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -357,9 +345,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("00843cea-7059-447f-93a7-bf465461c692"),
+                            Id = new Guid("bc217e0d-5d6a-4c7d-8718-950ff8e8226e"),
                             BirthDate = new DateTime(1980, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedAt = new DateTime(2024, 6, 23, 20, 52, 10, 43, DateTimeKind.Local).AddTicks(5387),
+                            CreatedAt = new DateTime(2024, 6, 23, 18, 28, 59, 67, DateTimeKind.Local).AddTicks(3572),
                             FirstName = "John",
                             Insured = true,
                             LastName = "Doe",
@@ -368,9 +356,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("8f307f67-09e7-4305-92b3-cc54724b95d7"),
+                            Id = new Guid("cf6922bd-fb45-447d-9019-d3ff185ec6b8"),
                             BirthDate = new DateTime(1990, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedAt = new DateTime(2024, 6, 23, 20, 52, 10, 43, DateTimeKind.Local).AddTicks(5454),
+                            CreatedAt = new DateTime(2024, 6, 23, 18, 28, 59, 67, DateTimeKind.Local).AddTicks(3641),
                             FirstName = "Jane",
                             Insured = true,
                             LastName = "Doe",
@@ -459,7 +447,8 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasOne("HospitalManagementSystem.Domain.Models.People.Patient", "Patient")
                         .WithMany("Bills")
                         .HasForeignKey("PatientId")
-                        .OnDelete(DeleteBehavior.SetNull);
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
 
                     b.Navigation("Patient");
                 });

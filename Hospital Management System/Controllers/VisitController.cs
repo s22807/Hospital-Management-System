@@ -27,28 +27,25 @@ namespace HospitalManagementSystem.Controllers
             return View(visits);
         }
         [HttpPost]
-        public async Task<IActionResult> Slots(Guid id, Guid selectedTag)
+        public async Task<IActionResult> Slots(Guid Id, Guid selectedTag)
         {
             if(selectedTag == Guid.Empty)
             {
                 throw new Exception("Tag not selected");
             }
             var tagDTO = new TagDTO() { Id = selectedTag };
-            var visitSlots = await _visitService.GetVisitSlots(tagDTO);
+            var visitSlots = await _visitService.GetVisitSlots(tagDTO, Id);
             return View(visitSlots);
         }
 
 
         public async Task<IActionResult> Finalize(VisitSlotDTO chosenVisitSlotDTO)
         {
-            if (ViewBag.Patients == null && ViewBag.firstname == null && ViewBag.lastname == null && ViewBag.pesel == null)
-            {
-                var patients = await _patientService.GetPatientsAsync();
-                ViewBag.Patients = patients;
-            }
 
+            var visitId = await _visitService.CreateVisit(chosenVisitSlotDTO);
+            
 
-            return View(chosenVisitSlotDTO);
+            return Redirect($"/Patient/Details/{chosenVisitSlotDTO.PatientId}");
         }
         //[HttpPost]
         //public async Task<IActionResult> SearchPatients(VisitSlotDTO chosenVisitSlotDTO, string? firstname, string? lastname, string? pesel)
@@ -63,26 +60,7 @@ namespace HospitalManagementSystem.Controllers
 
         //    return View("Finalize", chosenVisitSlotDTO);
         //}
-        [HttpPost]
-        public async Task<IActionResult> SelectPatient(VisitSlotDTO createFinalVisitDTO)
-        {
-            var patientDTO = await _patientService.GetPatientAsync(createFinalVisitDTO.PatientId);
-            if (patientDTO == null)
-            {
-                return NotFound("Patient not found");
-            }
-            
-            
-            
-            return RedirectToAction("FinalizeWithPatient", createFinalVisitDTO);
 
-        }
-        public async Task<IActionResult> FinalizeWithPatient(VisitSlotDTO createFinalVisitDTO)
-        {
-
-            var visitId = await _visitService.CreateVisit(createFinalVisitDTO);
-            return RedirectToAction("Index");
-        }
 
     }
 }
