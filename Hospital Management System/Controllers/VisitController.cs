@@ -27,8 +27,13 @@ namespace HospitalManagementSystem.Controllers
             return View(visits);
         }
         [HttpPost]
-        public async Task<IActionResult> Slots(TagDTO tagDTO)
+        public async Task<IActionResult> Slots(Guid id, Guid selectedTag)
         {
+            if(selectedTag == Guid.Empty)
+            {
+                throw new Exception("Tag not selected");
+            }
+            var tagDTO = new TagDTO() { Id = selectedTag };
             var visitSlots = await _visitService.GetVisitSlots(tagDTO);
             return View(visitSlots);
         }

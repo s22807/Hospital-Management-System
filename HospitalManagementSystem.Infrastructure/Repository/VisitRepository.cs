@@ -95,7 +95,12 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         }
 
         public async Task<IEnumerable<Visit>> GetVisitSince(DateTime now)
-            => await _context.Visits.Where(e => e.VisitStartDate > now).ToListAsync();
+            => await _context.Visits.Where(e => e.VisitStartDate > now)
+            .Include(e => e.Doctor)
+            .Include(e => e.Room)
+            .Include(e => e.Tag)
+            .Include(e => e.Room.Department).
+            ToListAsync();
 
 
         public async Task UpdateAsync(Visit visit)

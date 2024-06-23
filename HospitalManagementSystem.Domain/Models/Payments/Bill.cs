@@ -8,13 +8,15 @@ namespace HospitalManagementSystem.Domain.Models.Payments
         public Guid BillId { get; set; }
         public DateTime CreatedAt { get; set; }
         public Guid VisitId { get; set; }
+        public Guid PatientId { get; set; }
         public double Cost { get; set; }
         
-        public Bill(Guid visitId, double cost)
+        public Bill(Guid visitId, Guid patientId, double cost)
         {
             BillId = Guid.NewGuid();
             CreatedAt = DateTime.Now;
             VisitId = visitId;
+            PatientId = patientId;
             Cost = cost; 
         }
         

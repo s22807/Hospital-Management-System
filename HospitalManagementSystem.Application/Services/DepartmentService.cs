@@ -40,6 +40,7 @@ namespace HospitalManagementSystem.Application.Services
         public async Task<DepartmentDetailsDTO> GetDepartmentDetailsAsync(Guid id)
         {
             var department = await _departmentRepository.GetDepartmentDetailsAsync(id);
+            department.Rooms = department.Rooms.OrderBy(x => x.Number).ToList();
             var departmentsDTO = new DepartmentDetailsDTO(department);
             return departmentsDTO;
         }

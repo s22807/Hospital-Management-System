@@ -8,11 +8,13 @@ namespace HospitalManagementSystem.Controllers
     {
         private readonly IPatientService _patientService;
         private readonly IUserService _userService;
+        private readonly ITagService _tagService;
 
-        public PatientController(IPatientService patientService, IUserService userService)
+        public PatientController(IPatientService patientService, IUserService userService, ITagService tagService)
         {
             _patientService = patientService;
             _userService = userService;
+            _tagService = tagService;
         }
 
 
@@ -21,9 +23,13 @@ namespace HospitalManagementSystem.Controllers
 
         [HttpGet]
         // GET: PatientController
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(IEnumerable<PatientDTO> patients)
         {
-            var patients = await GetPatientsAsync();
+            if (patients.Count() == 0)
+            {
+                patients = await GetPatientsAsync();
+            }
+            
 
             return View(patients);
         }
@@ -32,6 +38,7 @@ namespace HospitalManagementSystem.Controllers
         public async Task<ActionResult> Details(Guid Id)
         {
             var patient = await _patientService.GetPatientDetailsAsync(Id);
+            ViewBag.Tags = await _tagService.GetTagsAsync();
             if (patient == null)
             {
                 return NotFound();
@@ -86,8 +93,13 @@ namespace HospitalManagementSystem.Controllers
             }
             return View(patient);
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult VisitWithSelectedTag(PatientDetailsDTO patient)
+        {
+            return RedirectToAction("Slots", "Visit", new { tag = patient.SelectedTag });
+        }
 
-        
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Edit(PatientDTO patient)
@@ -106,6 +118,31 @@ namespace HospitalManagementSystem.Controllers
         {
             await _patientService.DeletePatientAsync(id);
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> SearchPatients(string firstName, string lastName, string pesel)
+        {
+            // Pobierz listę pacjentów na podstawie wyszukiwanych parametrów
+            var patients = await _patientService.GetPatientsAsync();
+
+            // Filtruj pacjentów na podstawie wyszukiwanych wartości
+            if (!string.IsNullOrEmpty(firstName))
+            {
+                patients = patients.Where(p => p.FirstName.Contains(firstName, System.StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrEmpty(lastName))
+            {
+                patients = patients.Where(p => p.LastName.Contains(lastName, System.StringComparison.OrdinalIgnoreCase));
+            }
+
+            if (!string.IsNullOrEmpty(pesel))
+            {
+                patients = patients.Where(p => p.Pesel.Contains(pesel, System.StringComparison.OrdinalIgnoreCase));
+            }
+
+            return RedirectToAction("Index", patients);
         }
     }
 }

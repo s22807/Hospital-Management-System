@@ -56,6 +56,20 @@
         <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
         <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
         <a asp-action="Index" class="btn btn-secondary">Back to List</a>
-        <a asp-action="Create" asp-route-id="@Model.Id" asp-controller="Visit" class="btn btn-primary">Register Visit</a>
+
+        <form asp-controller="Visit" asp-action="Slots" method="post">
+            <input type="hidden" asp-for="Id" />
+            <div class="form-group">
+                <label asp-for="SelectedTag">Select Tag:</label>
+                <select asp-for="SelectedTag" name="SelectedTag" class="form-control">
+                    <option value="">--Select Tag--</option>
+                    @foreach (var tag in ViewBag.Tags)
+                    {
+                        <option value="@tag.Id">@tag.Name</option>
+                    }
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Register Visit</button>
+        </form>
     </div>
 </div>

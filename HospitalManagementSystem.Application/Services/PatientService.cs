@@ -23,6 +23,7 @@ namespace HospitalManagementSystem.Application.Services
     internal class PatientService : IPatientService
     {
         private readonly IPatientRepository _patientRepository;
+        private TagService _tagService;
 
         public PatientService(IPatientRepository patientRepository)
             => _patientRepository = patientRepository;
@@ -43,6 +44,8 @@ namespace HospitalManagementSystem.Application.Services
             var p = await _patientRepository.GetPatientAsync(patientId);
             if (p == null)
                 return null;
+            
+
             return new PatientDTO(p);
         }
 
@@ -51,6 +54,7 @@ namespace HospitalManagementSystem.Application.Services
             var p = await _patientRepository.GetPatientAsync(patientId);
             if (p == null)
                 return null;
+            var patient = new PatientDetailsDTO(p);
             return new PatientDetailsDTO(p);
         }
 
@@ -98,6 +102,9 @@ namespace HospitalManagementSystem.Application.Services
             await _patientRepository.Update(p);
 
         }
+
+
+
 
         
     }

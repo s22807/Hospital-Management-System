@@ -1,7 +1,9 @@
 ﻿using HospitalManagementSystem.Application.Models;
 using HospitalManagementSystem.Application.Repositories;
 using HospitalManagementSystem.Domain.Models.People;
+using Microsoft.AspNetCore.Http;
 using System.Net.Mail;
+using System.Security.Claims;
 
 namespace HospitalManagementSystem.Application.Services
 {
@@ -11,12 +13,16 @@ namespace HospitalManagementSystem.Application.Services
         Task<UserDTO> LoginUserAsync(UserDTO userDTO);
         Task<UserDTO> GetUserByNameAsync(string username);
         Task<bool> CheckUnique(string username, string email);
+        Task<bool> IsUserInRole(string username, string role);
+        string GetCurrentUsername();
     }
     internal class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
-        public UserService(IUserRepository userRepository) {
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        public UserService(IUserRepository userRepository, IHttpContextAccessor httpContextAccessor) {
             _userRepository = userRepository;  
+            _httpContextAccessor = httpContextAccessor;
         }
 
         public async Task<IEnumerable<UserDTO>> GetUsersAsync()
@@ -63,5 +69,16 @@ namespace HospitalManagementSystem.Application.Services
             var mail = (await _userRepository.GetUserByEmailAsync(email)) == null;
             return name && mail;
         }
+
+        public async Task<bool> IsUserInRole(string username, string role)
+        {
+            var user = await _userRepository.GetUserByUsernameAsync(username);
+            return user.Role.Equals(role);
+        }
+        public string GetCurrentUsername()
+        {
+            return "Admin"; //tu musiałoby być jakieś logowanie
+        }
+
     }
 }

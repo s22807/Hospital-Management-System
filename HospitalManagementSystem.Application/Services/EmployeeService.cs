@@ -75,6 +75,7 @@ namespace HospitalManagementSystem.Application.Services
             employee.SetFireDate(employeeDTO.FireDate);
             employee.SetBirthDate(employeeDTO.Birthdate);
             employee.SetVisitTime(employeeDTO.VisitTime);
+            employee.SetRole((Employee.EmpKind)Enum.Parse(typeof(Employee.EmpKind), employeeDTO.EmpKind));
             await _employeeRepository.UpdateEmployeeAsync(employee);
         }
 

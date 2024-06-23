@@ -1,5 +1,6 @@
 ﻿using HospitalManagementSystem.Domain.Models.Department;
 using HospitalManagementSystem.Domain.Models.Department;
+using System.Net.NetworkInformation;
 
 namespace HospitalManagementSystem.Domain.Models.People
 {
@@ -46,6 +47,7 @@ namespace HospitalManagementSystem.Domain.Models.People
             this.DeletedAt = DateTime.Now;
         }
         public int? VisitTime { get; private set; } //in minutes
+        public static int DefaultVisitTime = 15;
         public int? HoursWorked { get; private set; }
         private static int TrainingTime = 80;
 
@@ -217,7 +219,12 @@ namespace HospitalManagementSystem.Domain.Models.People
             if (time > 0 && time < 60)
             {
                 VisitTime = time;
-            } else
+            } else if (time == null)
+            {
+                VisitTime = DefaultVisitTime;
+            }
+            
+            else
             {
                 throw new ArgumentException($"Unrealistic visit time {time}min");
             }

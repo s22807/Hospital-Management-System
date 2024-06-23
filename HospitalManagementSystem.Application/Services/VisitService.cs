@@ -51,11 +51,11 @@ namespace HospitalManagementSystem.Application.Services
                 visitShorts.Add(new VisitShortDTO {
                     VisitStartDate = visit.VisitStartDate,
                     //VisitEndDate = visit.VisitStartDate.AddMinutes((double)visit.Doctor.VisitTime),
-                    //DoctorId = visit.Doctor.Id,
-                    //RoomNumber = visit.Room.Number,
-                    //PatientId = visit.PatientId,
-                    //TagName = visit.Tag.Name,
-                    //DepartmentName = visit.Room.Department.Name
+                    DoctorId = visit.DoctorId,
+                    RoomNumber = visit.Room.Number,
+                    PatientId = visit.PatientId,
+                    TagName = visit.Tag.Name,
+                    DepartmentName = visit.Room.Department.Name
                 });
 
     }

@@ -9,9 +9,10 @@ namespace HospitalManagementSystem.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
-
-        public EmployeeController(IEmployeeService employeeService) {
+        private readonly IUserService _userService;
+        public EmployeeController(IEmployeeService employeeService, IUserService userService) {
             _employeeService = employeeService;
+            _userService = userService;
         }
         public Task<IEnumerable<EmployeeDTO>> GetEmployees()
             => _employeeService.GetEmployeesAsync();
@@ -53,6 +54,8 @@ namespace HospitalManagementSystem.Controllers
             }
             return View(emp);
         }
+        [HttpPost]
+
 
         // POST: EmployeeController/Edit/5
         [HttpPost]
@@ -83,6 +86,21 @@ namespace HospitalManagementSystem.Controllers
         {
             await _employeeService.TagEmployee(employeeId, tagId);
             return RedirectToAction("Details", "Department", new { id = departmentId });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UpdateRole(Guid id, string empKind)
+        {
+            var employee = await _employeeService.GetEmployeeByIdAsync(id);
+            if (employee == null)
+            {
+                return NotFound();
+            }
+
+            employee.EmpKind = empKind;
+            await _employeeService.UpdateEmployee(employee);
+
+            return RedirectToAction("Index");
         }
     }
 }

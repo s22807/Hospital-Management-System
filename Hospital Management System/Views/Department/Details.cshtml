@@ -40,12 +40,10 @@
                                     {
                                         <option value="@tag.Id">@tag.Name</option>
                                     }
-
                                 }
                             </select>
                             </form>
                         }
-
                         <form method="post" asp-controller="Employee" asp-action="Remove">
                             <input type="hidden" name="employeeId" value="@employee.Id" />
                             <input type="hidden" name="departmentId" value="@Model.Id" />

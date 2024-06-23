@@ -13,7 +13,9 @@ namespace HospitalManagementSystem.Application.Models
         public DateTime CreatedAt { get; set; }
         public string? MothersName { get; set; }
         public string? FathersName { get; set; }
+        public string SelectedTag { get; set; }
         public bool Insured { get; set; }
+
         public PatientDetailsDTO(Patient patient)
         {
             Id = patient.Id;
