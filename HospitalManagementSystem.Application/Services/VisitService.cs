@@ -79,7 +79,8 @@ namespace HospitalManagementSystem.Application.Services
                     PatientId = visit.PatientId,
                     TagName = visit.Tag.Name,
                     IsCancelled = visit.IsCancelled,
-                    Id = visit.Id
+                    Id = visit.Id,
+                    Status = visit.Status
                 });
 
     }

@@ -14,17 +14,22 @@ namespace HospitalManagementSystem.Application.Services
         Task AddRoomAsync(int roomNumber, Guid departmentId);
         Task RemoveRoomAsync(Guid roomId);
         Task TagRoom(Guid roomId, Guid tagId);
+        Task<IEnumerable<PersonDTO>> PeopleReport();
+        Task<int> SalarySum(Guid deptId);
     }
     internal class DepartmentService : IDepartmentService
     {
 
         private readonly IDepartmentRepository _departmentRepository;
         private readonly ITagRepository _tagRepository;
-        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository)
+        private readonly IEmployeeRepository _employeeRepository;
+        private readonly IPatientRepository _patientRepository;
+        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository, IEmployeeRepository employeeRepository, IPatientRepository patientRepository)
         {
             _departmentRepository = departmentRepository;
             _tagRepository = tagRepository;
-
+            _employeeRepository = employeeRepository;
+            _patientRepository = patientRepository;
         }
 
         public async Task CreateDepartmentAsync(string name)
@@ -78,5 +83,23 @@ namespace HospitalManagementSystem.Application.Services
                 await _departmentRepository.UpdateRoomAsync(room);
             }
         }
+
+        public async Task<IEnumerable<PersonDTO>> PeopleReport()
+        {
+            var emps = await _employeeRepository.GetEmployeesAsync();
+            var patients = await _patientRepository.GetPatientsAsync();
+            var people = emps.Select(x => new PersonDTO(x)).Concat(patients.Select(x => new PersonDTO(x)));
+            return people;
+        }
+
+
+        public async Task<int> SalarySum(Guid deptId)
+        {
+            var emps = await _employeeRepository.GetEmployeesByDepartment(deptId);
+            var sum = emps.Sum(x => x.Salary);
+            return sum;
+        }
+
+
     }
 }

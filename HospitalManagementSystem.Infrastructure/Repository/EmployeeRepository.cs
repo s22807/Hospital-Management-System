@@ -26,6 +26,9 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         public async Task<IEnumerable<Employee>> GetEmployeesAsync()
             => await _context.Employees.ToListAsync();
 
+        public async Task<IEnumerable<Employee>> GetEmployeesByDepartment(Guid deptId)
+            => await _context.Employees.Where(e=>e.DepartmentId==deptId).ToListAsync();
+
         public async Task Remove(Employee employee){
             _context.Employees.Remove(employee);
             await _context.SaveChangesAsync();

@@ -17,5 +17,6 @@ namespace HospitalManagementSystem.Application.Models
         public Guid? PatientId { get; set; }
         public string? TagName { get; set; }
         public bool IsCancelled { get; set; }
+        public string Status { get; set; }
     }
 }

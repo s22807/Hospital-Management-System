@@ -8,6 +8,7 @@ namespace HospitalManagementSystem.Application.Repositories
         Task<IEnumerable<Employee>> GetDoctorsForTagAsync(Guid tagId);
         Task<Employee?> GetEmployeeAsync(Guid id);
         Task<IEnumerable<Employee>> GetEmployeesAsync();
+        Task<IEnumerable<Employee>> GetEmployeesByDepartment(Guid deptId);
         Task Remove(Employee employee);
         Task UpdateEmployeeAsync(Employee employee);
     }

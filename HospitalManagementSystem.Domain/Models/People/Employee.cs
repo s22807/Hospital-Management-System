@@ -202,35 +202,73 @@ namespace HospitalManagementSystem.Domain.Models.People
             HoursWorked += hours;
             if (HoursWorked >= TrainingTime && Role == IEmpRole.Role.Trainee)
             {
+                finishTraining();
                 SetRole(IEmpRole.Role.Receptionist);
                 SetSalary((int)(Salary * 1.2));
             }
         }
 
+        public void finishTraining()
+        {
+            if (this.hasRole("Trainee"))
+            {
+                this.Role = IEmpRole.Role.Receptionist;
+                this.Salary = (int)Math.Ceiling(Salary * 1.25);
+            }
+        }
+
         public bool hasRole(string role)
         {
-            var r = Enum.Parse(typeof(IEmpRole.Role), role);
-            return Role == (IEmpRole.Role)r;
+            return Role == (IEmpRole.Role) Enum.Parse(typeof(IEmpRole.Role), role);
         }
 
         public void setRole(string role)
         {
-            if (hasRole(role))
+            if (string.IsNullOrEmpty(role))
             {
-                return;
+                throw new ArgumentException("Role cannot be empty");
             }
-            SetRole((IEmpRole.Role)Enum.Parse(typeof(IEmpRole.Role), role));
+            if (this.Role != null)
+            {
+                throw new ArgumentException("Role already set");
+            }
+            if (Enum.GetNames(typeof(IEmpRole.Role)).Contains(role))
+            {
+                Role = (IEmpRole.Role)Enum.Parse(typeof(IEmpRole.Role), role);
+            }
+            else
+            {
+                throw new ArgumentException("Role does not exist");
+            }
         }
 
         public void setAnnouncement(string announcement)
         {
-            throw new NotImplementedException();
+            if (Department == null)
+            {
+                throw new ArgumentException("Employee does not belong to any department");
+            }
+            if (this.hasRole("Administrator") || this.hasRole("Receptionist"))
+            {
+                Department.setAnnouncement(announcement);
+            }
+        }
+        public void setAnnouncement(string announcement, Department.Department dept)
+        {
+            if (dept == null)
+            {
+                throw new ArgumentException("Employee does not belong to any department");
+            }
+            if (this.hasRole("Administrator") || (this.Department == dept && this.hasRole("Receptionist")))
+            {
+                dept.setAnnouncement(announcement);
+            }
+            else
+            {
+                throw new Exception("Employee does not have permission to set announcement");
+            }
         }
 
-        public void finishTraining()
-        {
-            throw new NotImplementedException();
-        }
 
         //public DateTime backAtWorkDate { get; set; }
         //public TimeSpan timePracticed { get; set; }

@@ -48,6 +48,13 @@ namespace HospitalManagementSystem.Domain.Models.Department
                 Rooms.Remove(room);
             room.Department = null;
         }
+
+        public void setAnnouncement(string announcement)
+        {
+            this.Announcements = announcement;
+            Console.WriteLine("Announcement set: " + announcement);
+        }
+
         
     }
 }

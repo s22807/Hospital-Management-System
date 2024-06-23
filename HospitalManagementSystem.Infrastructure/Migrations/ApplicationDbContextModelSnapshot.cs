@@ -28,6 +28,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
+                    b.Property<string>("Announcements")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -40,12 +43,12 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("89007f9b-46ed-43c8-9bc6-0123098a68d9"),
+                            Id = new Guid("e0846558-9a28-4843-aa79-32a0bbf97141"),
                             Name = "Childcare"
                         },
                         new
                         {
-                            Id = new Guid("ced7a993-4f86-4ffc-8523-0f8b5703357c"),
+                            Id = new Guid("1bf07562-c800-4d6f-9c7e-bc12942b231e"),
                             Name = "Dentistry"
                         });
                 });
@@ -271,6 +274,94 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasIndex("TagId");
 
                     b.ToTable("Employee", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = new Guid("083a6287-d9c7-4f58-83b2-ad85c6affa4e"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Tomasz",
+                            LastName = "Internista",
+                            Pesel = "12345678901",
+                            Role = 3,
+                            Salary = 7500,
+                            Sex = true,
+                            VacationDays = 2,
+                            VisitTime = 15
+                        },
+                        new
+                        {
+                            Id = new Guid("7e174557-6432-4d6f-9bbd-10d63e229312"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Sebastian",
+                            LastName = "Internista",
+                            Pesel = "12345678901",
+                            Role = 3,
+                            Salary = 7500,
+                            Sex = true,
+                            VacationDays = 2,
+                            VisitTime = 15
+                        },
+                        new
+                        {
+                            Id = new Guid("d8606002-e657-4c7d-b5bd-8bc098dce95d"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Paweł",
+                            LastName = "Trainee",
+                            Pesel = "12345678901",
+                            Role = 0,
+                            Salary = 2500,
+                            Sex = true,
+                            VacationDays = 2
+                        },
+                        new
+                        {
+                            Id = new Guid("a407776f-6d34-4acb-b7d5-a0000f227ea9"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Przemysław",
+                            LastName = "Admin",
+                            Pesel = "12345678901",
+                            Role = 2,
+                            Salary = 3400,
+                            Sex = true,
+                            VacationDays = 2
+                        },
+                        new
+                        {
+                            Id = new Guid("57e3ff04-b01c-4ff1-a4ec-d434cd668cf3"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Maria",
+                            LastName = "Goral",
+                            Pesel = "12345678901",
+                            Role = 1,
+                            Salary = 3000,
+                            Sex = true,
+                            VacationDays = 2
+                        },
+                        new
+                        {
+                            Id = new Guid("3a461a7b-220a-42fd-a670-cac196d05dfb"),
+                            BirthDate = new DateTime(1988, 1, 12, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            CreatedAt = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FireDate = new DateTime(2024, 9, 9, 0, 0, 0, 0, DateTimeKind.Unspecified),
+                            FirstName = "Anna",
+                            LastName = "Kowal",
+                            Pesel = "12345678901",
+                            Role = 1,
+                            Salary = 3000,
+                            Sex = true,
+                            VacationDays = 2
+                        });
                 });
 
             modelBuilder.Entity("HospitalManagementSystem.Domain.Models.People.Patient", b =>
@@ -331,9 +422,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("852bb25a-ea02-4fd1-9822-51dc3746fc6c"),
+                            Id = new Guid("7855dcea-6c59-482b-94ea-b33a9a483566"),
                             BirthDate = new DateTime(1980, 5, 15, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedAt = new DateTime(2024, 6, 23, 22, 1, 35, 775, DateTimeKind.Local).AddTicks(7343),
+                            CreatedAt = new DateTime(2024, 6, 23, 23, 42, 29, 626, DateTimeKind.Local).AddTicks(9022),
                             FirstName = "John",
                             Insured = true,
                             LastName = "Doe",
@@ -342,9 +433,9 @@ namespace HospitalManagementSystem.Infrastructure.Migrations
                         },
                         new
                         {
-                            Id = new Guid("7909ee09-5e6f-487d-b067-d654e0fbab54"),
+                            Id = new Guid("d1ced38e-379f-485a-aab2-f82ee82bc3f8"),
                             BirthDate = new DateTime(1990, 3, 25, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            CreatedAt = new DateTime(2024, 6, 23, 22, 1, 35, 775, DateTimeKind.Local).AddTicks(7406),
+                            CreatedAt = new DateTime(2024, 6, 23, 23, 42, 29, 626, DateTimeKind.Local).AddTicks(9046),
                             FirstName = "Jane",
                             Insured = true,
                             LastName = "Doe",

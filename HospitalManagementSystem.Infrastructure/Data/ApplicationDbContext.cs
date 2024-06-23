@@ -53,12 +53,15 @@ namespace HospitalManagementSystem.Data
                 e.Property(e => e.Password);
                 e.Property(e => e.VisitTime);
                 e.HasOne(e => e.Department).WithMany(e => e.Employees).HasForeignKey(e => e.DepartmentId).OnDelete(DeleteBehavior.SetNull);
-                //e.HasData(new List<Employee>()
-                //{
-                //    new Employee(Guid.Parse("00000000-0000-0000-0001-000000000001"), 2000, 4, new DateTime(2023, 12, 23), Guid.Parse("00000000-0000-0000-0002-000000000001"), "Jan", "Kowalski", "12345678901", new DateTime(1989,8,12), true),
-                //    new Employee(Guid.Parse("00000000-0000-0000-0001-000000000002"), 1700, 4, new DateTime(2023, 12, 23), Guid.Parse("00000000-0000-0000-0002-000000000001"), "Stanislaw", "Goral", "12345678901", new DateTime(1989,6,12), true),
-                //    new Employee(Guid.Parse("00000000-0000-0000-0001-000000000003"), 5000, 4, new DateTime(2023, 12, 23), Guid.Parse("00000000-0000-0000-0002-000000000001"), "Ignacy", "Rybak", "12345678901", new DateTime(1979,8,12), true)
-                //});
+                e.HasData(new List<Employee>()
+                {
+                    new Employee(7500, new DateTime(2024,9,9), IEmpRole.Role.Doctor, "Tomasz", "Internista", "12345678901", new DateTime(1988,1,12),true,15),
+                    new Employee(7500, new DateTime(2024,9,9), IEmpRole.Role.Doctor, "Sebastian", "Internista", "12345678901", new DateTime(1988,1,12),true,15),
+                    new Employee(2500, new DateTime(2024,9,9), IEmpRole.Role.Trainee, "Paweł", "Trainee", "12345678901", new DateTime(1988,1,12),true,15),
+                    new Employee(3400, new DateTime(2024,9,9), IEmpRole.Role.Admin, "Przemysław", "Admin", "12345678901", new DateTime(1988,1,12),true,0),
+                    new Employee(3000, new DateTime(2024,9,9), IEmpRole.Role.Receptionist, "Maria", "Goral", "12345678901", new DateTime(1988,1,12),true,0),
+                    new Employee(3000, new DateTime(2024,9,9), IEmpRole.Role.Receptionist, "Anna", "Kowal", "12345678901", new DateTime(1988,1,12),true,0)
+                });
 
             });
 
