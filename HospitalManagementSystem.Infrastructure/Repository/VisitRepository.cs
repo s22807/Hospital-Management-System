@@ -3,6 +3,7 @@ using HospitalManagementSystem.Application.Repositories;
 using HospitalManagementSystem.Domain.Models.Department;
 using Microsoft.EntityFrameworkCore;
 using static HospitalManagementSystem.Domain.Models.People.Employee;
+using HospitalManagementSystem.Domain.Models.People;
 
 namespace HospitalManagementSystem.Infrastructure.Repository
 {
@@ -45,7 +46,7 @@ namespace HospitalManagementSystem.Infrastructure.Repository
         public async Task<IEnumerable<VisitSlot>> GetFreeSlots(Tag tag)
         {
             if (tag == null) throw new Exception("Tag not provided");
-            var doctors = await _context.Employees.Where(e => e.Role == EmpKind.Doctor && e.TagId == tag.Id).ToListAsync();
+            var doctors = await _context.Employees.Where(e => e.Role == IEmpRole.Role.Doctor && e.TagId == tag.Id).ToListAsync();
             var rooms = await _context.Rooms.Where(e => e.TagId == tag.Id).ToListAsync();
             var reservedSlots = await _context.Visits.Where(e => e.TagId == tag.Id).ToListAsync();
 

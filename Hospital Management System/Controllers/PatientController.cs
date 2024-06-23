@@ -7,13 +7,12 @@ namespace HospitalManagementSystem.Controllers
     public class PatientController : Controller
     {
         private readonly IPatientService _patientService;
-        private readonly IUserService _userService;
+
         private readonly ITagService _tagService;
 
-        public PatientController(IPatientService patientService, IUserService userService, ITagService tagService)
+        public PatientController(IPatientService patientService, ITagService tagService)
         {
             _patientService = patientService;
-            _userService = userService;
             _tagService = tagService;
         }
 
@@ -44,21 +43,6 @@ namespace HospitalManagementSystem.Controllers
                 return NotFound();
             }
             return View(patient);
-        }
-        [HttpPost]
-        public async Task<ActionResult> Register(UserDTO userDTO)
-        {
-            if (!await _userService.CheckUnique(userDTO.Username, userDTO.Email))
-                return BadRequest("Username and email must be unique");
-            try
-            {
-                await _patientService.RegisterAsync(userDTO);
-                return RedirectToAction("Details");
-            } catch (Exception ex)
-            {
-                return BadRequest(ex.Message);
-            }
-
         }
 
         // GET: PatientController/Create

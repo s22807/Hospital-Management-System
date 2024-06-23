@@ -17,14 +17,14 @@ namespace HospitalManagementSystem.Application.Services
     }
     internal class DepartmentService : IDepartmentService
     {
-        private readonly IUserService _userService;
+
         private readonly IDepartmentRepository _departmentRepository;
         private readonly ITagRepository _tagRepository;
-        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository, IUserService userService)
+        public DepartmentService(IDepartmentRepository departmentRepository, ITagRepository tagRepository)
         {
             _departmentRepository = departmentRepository;
             _tagRepository = tagRepository;
-            _userService = userService;
+
         }
 
         public async Task CreateDepartmentAsync(string name)

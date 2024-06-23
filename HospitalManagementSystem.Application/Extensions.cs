@@ -14,7 +14,6 @@ namespace HospitalManagementSystem.Application
                 .AddScoped<IVisitService, VisitService>()
                 .AddScoped<IDepartmentService, DepartmentService>()
                 .AddScoped<ITagService, TagService>()
-                .AddScoped<IUserService, UserService>()
                 ;
         }
     }

@@ -9,10 +9,9 @@ namespace HospitalManagementSystem.Controllers
     public class EmployeeController : Controller
     {
         private readonly IEmployeeService _employeeService;
-        private readonly IUserService _userService;
-        public EmployeeController(IEmployeeService employeeService, IUserService userService) {
+
+        public EmployeeController(IEmployeeService employeeService) {
             _employeeService = employeeService;
-            _userService = userService;
         }
         public Task<IEnumerable<EmployeeDTO>> GetEmployees()
             => _employeeService.GetEmployeesAsync();

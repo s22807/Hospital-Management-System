@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace HospitalManagementSystem.Domain.Models.People
 {
-    public class Patient : Person, IUser
+    public class Patient : Person
     {
         public Guid Id { get; private set; }
         public DateTime CreatedAt { get; private set; }

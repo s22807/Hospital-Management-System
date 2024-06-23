@@ -3,7 +3,7 @@
 namespace HospitalManagementSystem.Domain.Models.People
 {
 
-    public class Employee : Person, IUser, Admin, Doctor, Receptionist, Trainee
+    public class Employee : Person, Admin, Doctor, Receptionist, Trainee
     {
 
 
@@ -12,7 +12,6 @@ namespace HospitalManagementSystem.Domain.Models.People
         public int VacationDays { get; private set; }
         public DateTime FireDate { get; private set; }
         public IEmpRole.Role Role { get; private set; }
-        string IUser.Role => Role.ToString();
         public Guid? DepartmentId { get; private set; }
         public Guid? TagId { get; private set; }
         public virtual Department.Department? Department { get; private set; }

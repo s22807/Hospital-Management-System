@@ -45,7 +45,7 @@ namespace HospitalManagementSystem.Application.Services
         public async Task CreateEmployeeAsync(CreateEmployeeDTO employeeCreateDTO)
         {
             var dept = await _departmentRepository.GetDepartmentDetailsAsync(employeeCreateDTO.DepartmentId);
-            Employee.EmpKind empKind;
+            IEmpRole.Role empKind;
             Enum.TryParse(employeeCreateDTO.EmpKind, out empKind);
 
             var emp = new Employee(employeeCreateDTO.Salary, DateTime.Now.AddYears(2), dept, empKind,
@@ -75,7 +75,7 @@ namespace HospitalManagementSystem.Application.Services
             employee.SetFireDate(employeeDTO.FireDate);
             employee.SetBirthDate(employeeDTO.Birthdate);
             employee.SetVisitTime(employeeDTO.VisitTime);
-            employee.SetRole((Employee.EmpKind)Enum.Parse(typeof(Employee.EmpKind), employeeDTO.EmpKind));
+            employee.SetRole((IEmpRole.Role)Enum.Parse(typeof(IEmpRole.Role), employeeDTO.EmpKind));
             await _employeeRepository.UpdateEmployeeAsync(employee);
         }
 

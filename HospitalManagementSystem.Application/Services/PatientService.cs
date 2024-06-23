@@ -15,7 +15,7 @@ namespace HospitalManagementSystem.Application.Services
         Task DeletePatientAsync(Guid patientId);
         Task UpdatePatientAsync(PatientDTO patient);
         Task<IEnumerable<PatientDTO>> GetPatientsAsync(string? firstname, string? lastname, string? pesel);
-        Task RegisterAsync(UserDTO userDTO);
+
 
         //Task UpdatePatientAsync(Guid patientId, PatientEditDTO patient);
     }
@@ -73,16 +73,6 @@ namespace HospitalManagementSystem.Application.Services
         {
             var patients = await _patientRepository.GetPatientsAsync(firstname, lastname, pesel);
             return patients.Select(x => new PatientDTO(x));
-        }
-
-        public async Task RegisterAsync(UserDTO userDTO)
-        {
-            var patient = await _patientRepository.GetPatientAsync((Guid)userDTO.Id);
-            patient.Email=userDTO.Email;
-            patient.Username=userDTO.Username;
-            patient.Password=userDTO.Password;
-            await _patientRepository.Update(patient);
-            
         }
 
         public async Task RemovePatientAsync(Guid patientId)
