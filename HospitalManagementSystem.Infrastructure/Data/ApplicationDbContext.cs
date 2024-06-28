@@ -53,15 +53,8 @@ namespace HospitalManagementSystem.Data
                 e.Property(e => e.Password);
                 e.Property(e => e.VisitTime);
                 e.HasOne(e => e.Department).WithMany(e => e.Employees).HasForeignKey(e => e.DepartmentId).OnDelete(DeleteBehavior.SetNull);
-                e.HasData(new List<Employee>()
-                {
-                    new Employee(7500, new DateTime(2024,9,9), IEmpRole.Role.Doctor, "Tomasz", "Internista", "12345678901", new DateTime(1988,1,12),true,15),
-                    new Employee(7500, new DateTime(2024,9,9), IEmpRole.Role.Doctor, "Sebastian", "Internista", "12345678901", new DateTime(1988,1,12),true,15),
-                    new Employee(2500, new DateTime(2024,9,9), IEmpRole.Role.Trainee, "Paweł", "Trainee", "12345678901", new DateTime(1988,1,12),true,15),
-                    new Employee(3400, new DateTime(2024,9,9), IEmpRole.Role.Admin, "Przemysław", "Admin", "12345678901", new DateTime(1988,1,12),true,0),
-                    new Employee(3000, new DateTime(2024,9,9), IEmpRole.Role.Receptionist, "Maria", "Goral", "12345678901", new DateTime(1988,1,12),true,0),
-                    new Employee(3000, new DateTime(2024,9,9), IEmpRole.Role.Receptionist, "Anna", "Kowal", "12345678901", new DateTime(1988,1,12),true,0)
-                });
+                e.HasOne(e => e.Tag).WithMany().HasForeignKey(e => e.TagId).OnDelete(DeleteBehavior.SetNull);
+               
 
             });
 
@@ -80,7 +73,7 @@ namespace HospitalManagementSystem.Data
                 e.Property(e => e.Amount).IsRequired();
                 e.HasOne(e => e.Bill).WithMany(e => e.Payments).HasForeignKey(e => e.BillId).OnDelete(DeleteBehavior.Cascade);
                 e.HasOne(e => e.Patient).WithMany(e => e.Payments).HasForeignKey(e => e.PatientId).OnDelete(DeleteBehavior.NoAction);
-            });
+            }); 
 
             modelBuilder.Entity<Bill>(e =>
             {

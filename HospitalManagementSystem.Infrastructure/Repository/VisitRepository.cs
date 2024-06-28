@@ -56,9 +56,9 @@ namespace HospitalManagementSystem.Infrastructure.Repository
             }
             // Iterate until 4 PM (16:00)
             var availableSlots = new List<VisitSlot>();
+            var slotStartTime = DateTime.Today.AddDays(1).AddHours(8);
             do
             {
-                var slotStartTime = DateTime.Today.AddDays(1).AddHours(8);
                 
                 foreach (var doctor in doctors)
                 {
@@ -71,7 +71,8 @@ namespace HospitalManagementSystem.Infrastructure.Repository
                         var doctorHasVisit = reservedSlots.Any(visit =>
                             visit.DoctorId == doctor.Id &&
                             visit.VisitStartDate < slotEndTime &&
-                            visit.VisitStartDate.AddMinutes(visitTimed) > slotStartTime);
+                            visit.VisitStartDate.AddMinutes(visitTimed) > slotStartTime &&
+                            !visit.IsCancelled);
 
                         if (!doctorHasVisit)
                         {
@@ -80,7 +81,8 @@ namespace HospitalManagementSystem.Infrastructure.Repository
                                 var slotOccupied = reservedSlots.Any(visit =>
                                     visit.RoomId == room.Id &&
                                     visit.VisitStartDate < slotEndTime &&
-                                    visit.VisitStartDate.AddMinutes(visitTimed) > slotStartTime);
+                                    visit.VisitStartDate.AddMinutes(visitTimed) > slotStartTime &&
+                                    !visit.IsCancelled);
 
                                 if (!slotOccupied)
                                 {

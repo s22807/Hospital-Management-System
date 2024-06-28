@@ -26,8 +26,8 @@ namespace HospitalManagementSystem.Application.Services
         private readonly ITagRepository _tagRepository;
         private readonly IPaymentsRepository _paymentsRepository;
         private readonly double visitCost;
-        public VisitService(IVisitRepository visitRepository, IEmployeeRepository employeeRepository, 
-            IPatientRepository patientRepository, IDepartmentRepository departmentRepository, 
+        public VisitService(IVisitRepository visitRepository, IEmployeeRepository employeeRepository,
+            IPatientRepository patientRepository, IDepartmentRepository departmentRepository,
             ITagRepository tagRepository, IPaymentsRepository paymentsRepository,
             IConfiguration configuration)
         {
@@ -50,14 +50,14 @@ namespace HospitalManagementSystem.Application.Services
         public async Task registerDoneVisit(Guid visitId)
         {
             var visit = await _visitRepository.GetAsync(visitId);
-            visit.Status = visit.Status == "Paid" ? "Closed" : "Completed"; 
+            visit.Status = visit.Status == "Paid" ? "Closed" : "Completed";
             await _visitRepository.UpdateAsync(visit);
             return;
         }
 
         public async Task<Guid> CreateVisit(VisitSlotDTO createFinalVisitDTO)
         {
-            var visit = new Visit(createFinalVisitDTO.PatientId,createFinalVisitDTO.DoctorId, createFinalVisitDTO.RoomId,createFinalVisitDTO.VisitStartDate,createFinalVisitDTO.TagId);
+            var visit = new Visit(createFinalVisitDTO.PatientId, createFinalVisitDTO.DoctorId, createFinalVisitDTO.RoomId, createFinalVisitDTO.VisitStartDate, createFinalVisitDTO.TagId);
             await _paymentsRepository.CreateBill(visit.Bill);
             await _visitRepository.CreateVisitAsync(visit);
             return visit.Id;
@@ -66,12 +66,13 @@ namespace HospitalManagementSystem.Application.Services
         public async Task<IEnumerable<VisitShortDTO>> GetCurrentVisitsAsync()
         {
             var visits = await _visitRepository.GetVisitSince(DateTime.Now);
-            
+
             List<VisitShortDTO> visitShorts = new List<VisitShortDTO>();
 
             foreach (var visit in visits)
             {
-                visitShorts.Add(new VisitShortDTO {
+                visitShorts.Add(new VisitShortDTO
+                {
                     VisitStartDate = visit.VisitStartDate,
                     //VisitEndDate = visit.VisitStartDate.AddMinutes((double)visit.Doctor.VisitTime),
                     DoctorId = visit.DoctorId,
@@ -83,10 +84,11 @@ namespace HospitalManagementSystem.Application.Services
                     Status = visit.Status
                 });
 
-    }
-            return visitShorts;
+            }
+            
+            return visitShorts.OrderBy(v => v.VisitStartDate);
         }
-        
+
         public async Task<IEnumerable<VisitSlotDTO>> GetVisitSlots(TagDTO tagDTO, Guid patientId)
         {
             if (tagDTO.Id == null) throw new Exception("No tagId provided");
@@ -99,12 +101,12 @@ namespace HospitalManagementSystem.Application.Services
                 {
                     VisitStartDate = slot.slotStartTime,
                     VisitEndDate = slot.slotEndTime,
-                    DoctorId=slot.Doctor.Id,
+                    DoctorId = slot.Doctor.Id,
                     RoomId = slot.Room.Id,
                     TagId = slot.Tag.Id,
-                    RoomNumber=slot.Room.Number,
-                    TagName=slot.Tag.Name,
-                    PatientId=patientId
+                    RoomNumber = slot.Room.Number,
+                    TagName = slot.Tag.Name,
+                    PatientId = patientId
                 });
             }
             return slotsDTO;
